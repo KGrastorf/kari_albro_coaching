@@ -1,5 +1,5 @@
 jQuery('#bckd-img1').mouseenter(function() {
-    jQuery('#hero').css("background-image", "url(./images/TreeHeartInt.jpg)");
+    jQuery('#hero').css("background-image", "url(./images/rose.jpg)");
 });
 
 

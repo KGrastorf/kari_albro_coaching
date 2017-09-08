@@ -16,6 +16,7 @@ body {
   z-index: -99;
 }
 
+/*Home Page*/
 #hero {
   background-image: url("/images/Feetblur2FocusInt.jpg");
   background-size: cover;
@@ -27,14 +28,7 @@ body {
   animation-duration: 5s;
   animation-fill-mode: both;
   animation-name: fadeIn;
-  /*-webkit-transition: all .5s ;
-  transition: all .5s ;
-  transform: translate(1.1);*/
-  /*animation-duration: 1s;
-  animation-fill-mode: both;
-  animation-name: fadeIn;*/
   transition: background .7s linear;
-  /*transition: scale(1.5);*/
 }
 
 .space {
@@ -42,6 +36,7 @@ body {
   height: 32vh;
 }
 
+/*Non-Header Links*/
 .no-bullets {
     list-style-type: none;
 }
@@ -50,18 +45,9 @@ body {
   padding-left: 0;
   width: 100vw;
   display: flex;
-  /*font-family: 'Sacramento', cursive;*/
-  /*font-family: 'Crimson Text', serif;*/
-  /*font-family: 'Dancing Script', cursive;*/
   font-family: 'Josefin Sans', sans-serif;
   text-shadow: 2px 2px maroon;
   margin: 0;
-  /*color:#c3a343;
-    -webkit-text-fill-color: transparent;
-    background: -webkit-linear-gradient(transparent, transparent),
-    url(https://previews.123rf.com/images/naiaekky/naiaekky1501/naiaekky150100009/35114357-Shiny-yellow-leaf-gold-foil-texture-background-Stock-Photo.jpg) repeat;
-    background: -o-linear-gradient(transparent, transparent);
-    -webkit-background-clip: text;*/
     color: white;
     text-decoration: none !important;
     z-index: 100;
@@ -77,17 +63,8 @@ body {
   justify-content: center;
   font-family: 'Josefin Sans', sans-serif;
   text-shadow: 2px 2px maroon;
-  /*font-family: serif;*/
-  /*text-shadow: 2px 2px black;*/
-  /*text-align: center;*/
   font-size: 2.7em;
   margin: 0;
-  /*background-color: rgba(0,0,0,.5);*/
-  /*color:#c3a343;
-    -webkit-text-fill-color: transparent;
-    background: -webkit-linear-gradient(transparent, transparent),
-    url(https://media.giphy.com/media/VfjEHoNY0IMAE/giphy.gif) repeat;
-    background: -o-linear-gradient(transparent, transparent);
     -webkit-background-clip: text;*/
     color: rgb(125, 24, 14);
     text-decoration: none !important;
@@ -97,78 +74,39 @@ body {
 .home-links  {
   text-decoration: none;
   color: white;
-  /*font-family: 'Dancing Script', cursive;*/
   font-family: 'Sacramento', cursive;
   font-size: 1.3em;
-  /*background-color: rgba(200,200,200, .5);
-  padding: .3em;
-  border-radius: 50%;
-  filter:blur(4px);
--o-filter:blur(4px);
--ms-filter:blur(4px);
--moz-filter:blur(4px);
--webkit-filter:blur(4px);
-animation-duration: 10s;
-animation-fill-mode: both;
-animation-name: fadeIn;*/
+  -webkit-transition: all .2s ease-in-out;
+  -webkit-transform: scale(1);
+  -ms-transition: all .2s ease-in-out;
+  -ms-transform: scale(1);
+  -moz-transition: all .2s ease-in-out;
+  -moz-transform: scale(1);
+  transition: all .2s ease-in-out;
+  transform: scale(1);
 }
 
 .home-links:hover  {
   text-decoration: none;
   color: white;
-  /*font-family: 'Dancing Script', cursive;*/
   font-family: 'Sacramento', cursive;
   font-size: 1.3em;
-  /*background-color: rgba(200,200,200, .5);
-  padding: .3em;
-  border-radius: 50%;
-  filter:blur(0);
--o-filter:blur(0);
--ms-filter:blur(0);
--moz-filter:blur(0);
--webkit-filter:blur(0);
-animation-duration: 10s;
-animation-fill-mode: both;
-animation-name: fadeIn;*/
+  -webkit-transition: all .2s ease-in-out;
+  -webkit-transform: scale(1.3);
+  -ms-transition: all .2s ease-in-out;
+  -ms-transform: scale(1.3);
+  -moz-transition: all .2s ease-in-out;
+  -moz-transform: scale(1.3);
+  transition: all .2s ease-in-out;
+  transform: scale(1.3);
 }
 
 .home-links-start  {
   text-decoration: none;
   color: white;
-  /*font-family: 'Dancing Script', cursive;*/
   font-family: 'Sacramento', cursive;
   font-size: 2em;
-  /*background-color: rgba(200,200,200, .5);
-  padding: .3em;
-  border-radius: 50%;*/
-  /*filter:blur(4px);
--o-filter:blur(4px);
--ms-filter:blur(4px);
--moz-filter:blur(4px);
--webkit-filter:blur(4px);*/
-/*animation-duration: 10s;
-animation-fill-mode: both;
-animation-name: fadeIn;*/
 }
-
-/*.home-links-start:hover  {
-  text-decoration: none;
-  color: white;
-  /*font-family: 'Dancing Script', cursive;*/
-  /*font-family: 'Sacramento', cursive;
-  font-size: 2em;
-  background-color: rgba(200,200,200, .5);
-  padding: .3em;
-  border-radius: 50%;
-  filter:blur(0);
--o-filter:blur(0);
--ms-filter:blur(0);
--moz-filter:blur(0);
--webkit-filter:blur(0);
-animation-duration: 10s;
-animation-fill-mode: both;
-animation-name: fadeIn;
-}*/
 
 .title {
   font-family: 'Sacramento', cursive;
@@ -195,7 +133,6 @@ h1.name {
   display: inline-block;
   float: left;
   padding-top: 20vh;
-  /*background-color: rgba(0,0,0,.2);*/
   position: fixed;
   bottom: 15px;
   left: 15px;
@@ -213,11 +150,12 @@ h1.name {
 .title-bar {
   width: 100vw;
   height: auto;
+  padding: 0;
+  margin: 0;
 }
 
 .page-title {
   text-align: center;
-  /*font-family: 'Dancing Script', cursive;*/
   font-family: 'Sacramento', cursive;
   font-size: 7vw;
   position: absolute;
@@ -247,6 +185,7 @@ h1.name {
   height: auto;
 }
 
+/*About Me*/
 .slides {
   width: 100vw !important;
   height: auto;
@@ -260,7 +199,6 @@ h1.name {
 .left {
   width: 40;
   height: auto;
-  /*display: inline-block;*/
   margin: 0 auto;
   float: left;
 }
@@ -268,7 +206,6 @@ h1.name {
 .left2 {
   width: 40;
   height: auto;
-  /*display: inline-block;*/
   margin: 0 auto;
   float: left;
 }
@@ -277,7 +214,6 @@ h1.name {
 .right {
 width: 40vw;
 height: auto;
-/*display: inline-block;*/
 float: right;
 padding: 2em 10em 2em 3em;
 background-color: rgba(155,155,155,.1);
@@ -323,7 +259,6 @@ background-color: rgba(155,155,155,.1);
 
 .text2 {
   font-family: 'Karma', serif;
-  /*font-size: 1.3vw;*/
   text-align: center;
 }
 
@@ -358,6 +293,41 @@ background-color: rgba(155,155,155,.1);
   transform:translateX(20%) scale(1);
 }
 
+/*Start Here*/
+.columns {
+  display: flex;
+  padding: 0 2em;
+}
+
+.start {
+font-family: 'Sacramento', cursive;
+text-align: center;
+color:#cb2305;
+text-shadow: 10px 10px 15px grey;
+font-size: 4vw;
+padding-top: 1em;
+}
+
+.appointments {
+  display: flex;
+  width: 33vw;
+  height: auto;
+  flex-direction: row;
+}
+
+.work-with-me {
+  width: 33vw;
+  height: auto;
+  flex-direction: row;
+  background-color: rgba(240, 159, 37, .8)
+}
+
+.success-stories {
+  width: 33vw;
+  height: auto;
+  flex-direction: row;
+}
+
 .footer {
   font-family: 'Sacramento', cursive;
   text-align: center;
@@ -381,9 +351,6 @@ background-color: rgba(155,155,155,.1);
     width: 100vw;
     display: flex;
     flex-wrap: wrap;
-    /*font-family: 'Sacramento', cursive;*/
-    /*font-family: 'Crimson Text', serif;*/
-    /*font-family: 'Dancing Script', cursive;*/
     font-family: 'Josefin Sans', sans-serif;
     text-shadow: 2px 2px maroon;
     margin: 0;
@@ -396,24 +363,11 @@ background-color: rgba(155,155,155,.1);
     padding-left: 0;
     width: 100vw;
     display: flex;
-    /*flex-direction: row;
-    justify-content: space-around !important;*/
     flex-wrap: wrap;
-    /*justify-content: center;*/
     font-family: 'Josefin Sans', sans-serif;
     text-shadow: 2px 2px maroon;
-    /*font-family: serif;*/
-    /*text-shadow: 2px 2px black;*/
-    /*text-align: center;*/
     font-size: 2.7em;
     margin: 0;
-    /*background-color: rgba(0,0,0,.5);*/
-    /*color:#c3a343;
-      -webkit-text-fill-color: transparent;
-      background: -webkit-linear-gradient(transparent, transparent),
-      url(https://media.giphy.com/media/VfjEHoNY0IMAE/giphy.gif) repeat;
-      background: -o-linear-gradient(transparent, transparent);
-      -webkit-background-clip: text;*/
       color: rgb(125, 24, 14);
       text-decoration: none !important;
   }
@@ -496,39 +450,15 @@ background-color: rgba(155,155,155,.1);
   .home-links {
     text-decoration: none;
     color: white;
-    /*font-family: 'Dancing Script', cursive;*/
     font-family: 'Sacramento', cursive;
     font-size: 1em;
-    /*background-color: rgba(200,200,200, .5);
-    padding: .3em;
-    border-radius: 50%;
-    filter:blur(0);
-  -o-filter:blur(0);
-  -ms-filter:blur(0);
-  -moz-filter:blur(0);
-  -webkit-filter:blur(0);
-  animation-duration: 10s;
-  animation-fill-mode: both;
-  animation-name: fadeIn;*/
   }
 
   .home-links-start {
     text-decoration: none;
     color: white;
-    /*font-family: 'Dancing Script', cursive;*/
     font-family: 'Sacramento', cursive;
     font-size: 1.5em;
-    /*background-color: rgba(200,200,200, .5);
-    padding: .3em;
-    border-radius: 50%;
-    filter:blur(0);
-  -o-filter:blur(0);
-  -ms-filter:blur(0);
-  -moz-filter:blur(0);
-  -webkit-filter:blur(0);
-  animation-duration: 10s;
-  animation-fill-mode: both;
-  animation-name: fadeIn;*/
   }
 
   .footer {
@@ -546,10 +476,6 @@ background-color: rgba(155,155,155,.1);
     width: 100vw;
     display: flex;
     justify-content: center;
-    /*flex-wrap: wrap;*/
-    /*font-family: 'Sacramento', cursive;*/
-    /*font-family: 'Crimson Text', serif;*/
-    /*font-family: 'Dancing Script', cursive;*/
     font-family: 'Josefin Sans', sans-serif;
     text-shadow: 2px 2px maroon;
     margin: 0;
@@ -564,22 +490,9 @@ background-color: rgba(155,155,155,.1);
     display: flex;
     flex-direction: column;
     align-content: center;
-    /*justify-content: space-around !important;*/*/
     justify-content: center;
-    /*font-family: 'Josefin Sans', sans-serif;
-    text-shadow: 2px 2px maroon;
-    /*font-family: serif;*/
-    /*text-shadow: 2px 2px black;*/
-    /*text-align: center;*/
     font-size: 2.7em;
     margin: 0;
-    /*background-color: rgba(0,0,0,.5);*/
-    /*color:#c3a343;
-      -webkit-text-fill-color: transparent;
-      background: -webkit-linear-gradient(transparent, transparent),
-      url(https://media.giphy.com/media/VfjEHoNY0IMAE/giphy.gif) repeat;
-      background: -o-linear-gradient(transparent, transparent);
-      -webkit-background-clip: text;*/
       color: rgb(125, 24, 14);
       text-decoration: none !important;
   }
@@ -663,39 +576,14 @@ background-color: rgba(155,155,155,.1);
       .home-links {
         text-decoration: none;
         color: white;
-        /*font-family: 'Dancing Script', cursive;*/
         font-family: 'Sacramento', cursive;
-        font-size: 1em;
-        /*background-color: rgba(200,200,200, .5);
-        padding: .3em;
-        border-radius: 50%;
-        filter:blur(0);
-      -o-filter:blur(0);
-      -ms-filter:blur(0);
-      -moz-filter:blur(0);
-      -webkit-filter:blur(0);
-      animation-duration: 10s;
-      animation-fill-mode: both;
-      animation-name: fadeIn;*/
       }
 
       .home-links-start {
         text-decoration: none;
         color: white;
-        /*font-family: 'Dancing Script', cursive;*/
         font-family: 'Sacramento', cursive;
         font-size: 1.5em;
-        /*background-color: rgba(200,200,200, .5);
-        padding: .3em;
-        border-radius: 50%;
-        filter:blur(0);
-      -o-filter:blur(0);
-      -ms-filter:blur(0);
-      -moz-filter:blur(0);
-      -webkit-filter:blur(0);
-      animation-duration: 10s;
-      animation-fill-mode: both;
-      animation-name: fadeIn;*/
       }
 
       .footer {
