@@ -4,9 +4,9 @@ angular.module("kariApp", ["ui.router"]).config(function($stateProvider, $urlRou
             url: "/home",
             templateUrl: "./public/home.html",
         })
-        .state("about", {
-            url: "/about",
-            templateUrl: "./public/about.html"
+        .state("test", {
+            url: "/test",
+            templateUrl: "./public/test.html"
         })
         .state("wellness", {
             url: "/wellness",
@@ -19,6 +19,14 @@ angular.module("kariApp", ["ui.router"]).config(function($stateProvider, $urlRou
         .state("coach", {
             url: "/coach",
             templateUrl: "./public/coach.html"
+        })
+        .state("life", {
+            url: "/life",
+            templateUrl: "./public/life.html"
+        })
+        .state("work", {
+            url: "/work",
+            templateUrl: "./public/work.html"
         })
         .state("start", {
             url: "/start",

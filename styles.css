@@ -75,7 +75,7 @@ body {
   text-decoration: none;
   color: white;
   font-family: 'Sacramento', cursive;
-  font-size: 1.3em;
+  font-size: .8em;
   -webkit-transition: all .2s ease-in-out;
   -webkit-transform: scale(1);
   -ms-transition: all .2s ease-in-out;
@@ -299,6 +299,11 @@ background-color: rgba(155,155,155,.1);
   padding: 0 2em;
 }
 
+.page-body {
+  width: 100vw;
+  height: auto;
+}
+
 .start {
 font-family: 'Sacramento', cursive;
 text-align: center;
@@ -451,15 +456,15 @@ padding-top: 1em;
     text-decoration: none;
     color: white;
     font-family: 'Sacramento', cursive;
-    font-size: 1em;
+    font-size: 7vw;
   }
 
-  .home-links-start {
+  /*.home-links-start {
     text-decoration: none;
     color: white;
     font-family: 'Sacramento', cursive;
     font-size: 1.5em;
-  }
+  }*/
 
   .footer {
     font-family: 'Sacramento', cursive;
@@ -577,14 +582,15 @@ padding-top: 1em;
         text-decoration: none;
         color: white;
         font-family: 'Sacramento', cursive;
+        font-size: 7vw;
       }
 
-      .home-links-start {
+      /*.home-links-start {
         text-decoration: none;
         color: white;
         font-family: 'Sacramento', cursive;
         font-size: 1.5em;
-      }
+      }*/
 
       .footer {
         font-family: 'Sacramento', cursive;
