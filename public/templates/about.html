@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<div class="">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"><img src="./images/Flower.png" alt="Flower" class="flower"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+                     <a ui-sref="life" class="home-links-nav bckd-img1" id="bckd-img6">Life</a>
+                 </li>
+                   <li class="">
+                       <a ui-sref="coach" class="home-links-nav bckd-img1" id="bckd-img1">Coaching</a>
+                   </li>
+                   <li class="nav-item active">
+                       <a ui-sref="wellness" class="home-links-nav bckd-img5" id="bckd-img5">Wellness</a>
+                   </li>
+                   <!-- <li class="">
+                       <a ui-sref="about" class="home-links bckd-img2" id="bckd-img2">About Me</a>
+                   </li> -->
+                   <li class="nav-item active">
+                       <a ui-sref="start" class="home-links-nav bckd-img3" id="bckd-img3">Start Here</a>
+                   </li>
+                   <li class="nav-item active">
+                       <a ui-sref="work" class="home-links-nav bckd-img5" id="bckd-img2">Work With Me</a>
+                   </li>
+                   <li class="nav-item active">
+                       <a ui-sref="test" class="home-links-nav bckd-img5" id="bckd-img5">Success Stories</a>
+                   </li>
+                   <li class="nav-item active">
+                       <a ui-sref="blog" class="home-links-nav bckd-img4" id="bckd-img4">Blog</a>
+                   </li>
+        </li>
+      </ul>
+      <!-- <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form> -->
+    </div>
+  </nav>
+
+<div class="title-bar about">
+  <div class="banner title-bar about">
+    <h1 class="page-title"><a ui-sref="home" class="home-link">About Me</a></h1>
+    <img src="./images/Kari Squating.jpg" class="slides" alt="">
+  </div>
+  <div class="about-body">
+    <div class="left">
+      <img src="./images/Kari In Sun C.jpg" class="left-pic1-size align1 slide-in" alt="">
+    </div>
+    <div class="right">
+      <h1 class="journey">My Journey</h1>
+      <p class="text">I am Kari Albro a certified health and wellness coach, massage therapist, certified fermentationist and a practicing functional nutrition and a lover of life!</p>
+      <p class="text">Growing up I was a dreamer. I dreamed of being a singer. Sharing my voice with others. I love music and dancing. I spent a lot of my time here on my grandparents ranch in Montana, surrounded by beauty and wide open spaced. I would fo lay in the
+        fields and dream. and watch the world go by. It was the only place I felt connected and grounded. I've been through alot in my life that led me to my current path to become a coach and I look forward to exploring what has led you to becoming your
+        wholer you!</p>
+      <h2 class="text2"><strong>Fun facts about me!</strong></h2>
+      <p class="text">I absolutely love sparkles! I putsparkles on myself all the time....<br/>
+        </br/> I love to trabel and live in other countries. I have lived in Mexico, Belize, Fiji, Hawaii and Costa Rica.</p>
+      <br/>
+      </br/>
+      <p class="text">
+        I love House, Techno, Trance music. My secret desire is to go to the island of Ibiza, Spain and dance on the beach.
+      </p>
+      <br/>
+      </br/>
+      <p class="text">
+        I love dressed. I never owned a pair of jeans until recently. I hike, swim, dance, play and do yard work in little dresses.
+      </p>
+      <br/>
+      </br/>
+      <p class="text">
+        I love taking naps in the afternoon.
+
+      </p>
+    </div>
+    <div class="left2">
+      <img src="./images/AboutPic.png" class="left-pic1-size align1 slide-in" alt="">
+    </div>
+  </div>
+</div>
+
+</div>
+<script type="text/javascript">
+  function debounce(func, wait = 20, immediate = true) {
+    var timeout;
+    return function() {
+      var context = this,
+        args = arguments;
+      var later = function() {
+        timeout = null;
+        if (!immediate) func.apply(context, args);
+      };
+      var callNow = immediate && !timeout;
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+      if (callNow) func.apply(context, args);
+    };
+  };
+
+  const sliderImages = document.querySelectorAll('.slide-in');
+
+  function checkSlide(e) {
+    sliderImages.forEach(sliderImage => {
+      // half way through the image
+      const slideInAt = (window.scrollY + window.innerHeight) - sliderImage.height / 2;
+      // bottom of the image
+      const imageBottom = sliderImage.offsetTop + sliderImage.height;
+      const isHalfShown = slideInAt > sliderImage.offsetTop;
+      const isNotScrolledPast = window.scrollY < imageBottom;
+      if (isHalfShown && isNotScrolledPast) {
+        sliderImage.classList.add('active');
+      } else {
+        sliderImage.classList.remove('active');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', debounce(checkSlide));
+</script>

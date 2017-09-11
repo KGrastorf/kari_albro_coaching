@@ -1,0 +1,711 @@
+/*font-family: 'Open Sans', sans-serif;
+font-family: 'Sacramento', cursive;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Catamaran', sans-serif;
+font-family: 'Crimson Text', serif;
+font-family: 'Dancing Script', cursive;*/
+
+body {
+  margin: 0;
+  border: 0;
+
+}
+
+.hero {
+  display: flex;
+  z-index: -99;
+}
+
+/*Home Page*/
+#hero {
+  background-image: url("/images/Feetblur2FocusInt.jpg");
+  background-size: cover;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  animation-duration: 5s;
+  animation-fill-mode: both;
+  animation-name: fadeIn;
+  transition: background .7s linear;
+}
+
+.space {
+  width: 100vw;
+  height: 32vh;
+}
+
+/*Non-Header Links*/
+.no-bullets {
+    list-style-type: none;
+}
+
+.header {
+  padding-left: 0;
+  width: 100vw;
+  display: flex;
+  font-family: 'Josefin Sans', sans-serif;
+  text-shadow: 2px 2px maroon;
+  margin: 0;
+    color: white;
+    text-decoration: none !important;
+    z-index: 100;
+}
+
+
+.header-ul {
+  padding:30vh 0 0 0;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around !important;
+  justify-content: center;
+  font-family: 'Josefin Sans', sans-serif;
+  text-shadow: 2px 2px maroon;
+  font-size: 2.7em;
+  margin: 0;
+    -webkit-background-clip: text;*/
+    color: rgb(125, 24, 14);
+    text-decoration: none !important;
+    z-index: 100;
+}
+
+.home-links  {
+  text-decoration: none;
+  color: white;
+  font-family: 'Sacramento', cursive;
+  font-size: .8em;
+  -webkit-transition: all .2s ease-in-out;
+  -webkit-transform: scale(1);
+  -ms-transition: all .2s ease-in-out;
+  -ms-transform: scale(1);
+  -moz-transition: all .2s ease-in-out;
+  -moz-transform: scale(1);
+  transition: all .2s ease-in-out;
+  transform: scale(1);
+}
+
+/*div > ul.no-bullets.header-ul {
+  padding: 0;
+  margin: auto;
+}*/
+
+.home-links:hover  {
+  text-decoration: none;
+  color: white;
+  font-family: 'Sacramento', cursive;
+  font-size: 1.3em;
+  -webkit-transition: all .2s ease-in-out;
+  -webkit-transform: scale(1.3);
+  -ms-transition: all .2s ease-in-out;
+  -ms-transform: scale(1.3);
+  -moz-transition: all .2s ease-in-out;
+  -moz-transform: scale(1.3);
+  transition: all .2s ease-in-out;
+  transform: scale(1.3);
+}
+
+.home-links-nav  {
+  text-decoration: none;
+  color: #cb2305;
+  font-family: 'Sacramento', cursive;
+  font-size: 2.2vw;
+  padding: 3px 20px;
+}
+
+img.flower {
+  width: auto;
+  height: 5vw;
+}
+
+.home-links-start  {
+  text-decoration: none;
+  color: white;
+  font-family: 'Sacramento', cursive;
+  font-size: 2em;
+}
+
+.title {
+  font-family: 'Sacramento', cursive;
+  font-size: 4.5em;
+  /*color: white;*/
+  color: rgba(0,0,0,0);
+  /*text-shadow: 2px 2px maroon;*/
+  text-align: center;
+}
+
+.home-link {
+  color:#cb2305;
+  text-decoration: none;
+  display: block;
+  text-shadow: 10px 10px 35px black;
+}
+
+h1.name {
+  margin-bottom: 0;
+}
+.logo {
+  width: 20vw;
+  height: auto;
+  display: inline-block;
+  float: left;
+  padding-top: 20vh;
+  position: fixed;
+  bottom: 15px;
+  left: 15px;
+  z-index: 100;
+  opacity: .7;
+}
+
+.logo-home-link {
+  width: 100vw;
+  height: auto;
+  top: 20px;
+  left: 20px;
+}
+
+.title-bar {
+  width: 100vw;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+
+.page-title {
+  text-align: center;
+  font-family: 'Sacramento', cursive;
+  font-size: 7vw;
+  position: absolute;
+  top: 10vw;
+  left: 5vw;
+  margin: auto;
+  padding: .7em;
+  background-color: rgba(255,255,255,.5);
+  border-radius: 50%;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-name: fadeIn;
+  z-index: 2;
+}
+
+img.slides {
+  padding-top: -20em;
+}
+
+.fade-in {
+  animation-name: fadeIn;
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.banner {
+  width: 100vw;
+  height: auto;
+}
+
+/*About Me*/
+.slides {
+  width: 100vw !important;
+  height: auto;
+  animation-duration: 3s;
+  animation-fill-mode: both;
+  animation-name: fadeIn;
+  -webkit-animation-delay: 1; /* Safari 4.0 - 8.0 */
+    animation-delay: 1s;
+}
+
+.left {
+  width: 40;
+  height: auto;
+  margin: 0 auto;
+  float: left;
+}
+
+.left2 {
+  width: 40;
+  height: auto;
+  margin: 0 auto;
+  float: left;
+}
+
+
+.right {
+width: 40vw;
+height: auto;
+float: right;
+padding: 2em 10em 2em 3em;
+background-color: rgba(155,155,155,.1);
+}
+
+.about {
+
+}
+
+.left-pic1 {
+  padding: 7vw;
+  display: block;
+  margin: o auto;
+}
+
+.left-pic2 {
+  padding: 7vw;
+  display: block;
+  margin: 0 auto;
+}
+
+.left-pic1-size {
+  width: 30vw;
+  height: auto;
+  border-radius: 50% 50% 50% 0;
+  padding: 3em;
+}
+
+.journey {
+  font-family: 'Sacramento', cursive;
+  text-align: center;
+  color:#cb2305;
+  text-shadow: 10px 10px 15px grey;
+  font-size: 4vw;
+  padding-top: 1em;
+}
+
+.text {
+  font-family: 'Karma', serif;
+  font-size: 1.3vw;
+  text-align: center;
+}
+
+.text2 {
+  font-family: 'Karma', serif;
+  text-align: center;
+}
+
+.align-left {
+  float:left;
+  margin-right:20px;
+}
+
+.align-right {
+  float:right;
+  margin-left:20px;
+}
+
+.slide-in {
+  opacity:0;
+  transition:all .5s;
+}
+
+.align1.slide-in {
+  transform:translateX(-110%) scale(0.95);
+}
+
+.align2.slide-in {
+  transform:translateX(-110%) scale(0.95);
+}
+.align-right.slide-in {
+  transform:translateX(110%) scale(0.95);
+}
+
+.slide-in.active {
+  opacity:1;
+  transform:translateX(20%) scale(1);
+}
+
+/*Start Here*/
+.columns {
+  height: 50vh;
+  width: 100vw;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url('./images/Kari Lake Spring.jpg');
+    display: block;
+    /* Full height */
+    height: 80vh;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background: rgba(117, 320,102,.3);*/
+}
+
+.dummy-text {
+  font-size: 1.3vw;
+}
+
+.page-body {
+  width: 100vw;
+  height: auto;
+}
+
+.start {
+font-family: 'Sacramento', cursive;
+text-align: center;
+color:#cb2305;
+text-shadow: 10px 10px 15px grey;
+font-size: 4vw;
+padding-top: 1em;
+}
+
+.appointments {
+  display: flex;
+  width: 33vw;
+  height: auto;
+  flex-direction: row;
+}
+
+.work-with-me {
+  width: 33vw;
+  height: auto;
+  flex-direction: row;
+  background-color: rgba(240, 159, 37, .8)
+}
+
+.success-stories {
+  width: 33vw;
+  height: auto;
+  flex-direction: row;
+}
+
+.footer {
+  font-family: 'Sacramento', cursive;
+  text-align: center;
+  font-size: 2em;
+  color: #cb2305;
+}
+
+.social-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /*flex-wrap: wrap;*/
+  padding: 5vw;
+  /*display: inline-block;*/
+}
+
+.post-cards {
+
+}
+
+.unstoppable {
+  font-family: 'Sacramento', cursive;
+  font-size: 5em;
+  text-align: center;
+  margin: 0;
+  padding-top: 10%;
+  color: #cb2305;
+}
+
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+@media only screen and (max-width: 900px){
+  .header {
+    padding-left: 0;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Josefin Sans', sans-serif;
+    text-shadow: 2px 2px maroon;
+    margin: 0;
+    color: rgb(125, 24, 14);
+    text-decoration: none !important;
+  }
+
+
+  .header-ul {
+    padding-left: 0;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Josefin Sans', sans-serif;
+    text-shadow: 2px 2px maroon;
+    font-size: 2.7em;
+    margin: 0;
+      color: rgb(125, 24, 14);
+      text-decoration: none !important;
+  }
+
+  ul.no-bullets.header-ul {
+    padding: 1em;
+    text-align: center;
+  }
+  li {
+    width: 100vw;
+    text-align: center;
+  }
+
+  .logo {
+    width: 40vw;
+    height: auto;
+    display: inline-block;
+    float: left;
+    padding-top: 20vh;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    z-index: 100;
+    opacity: .5;
+  }
+
+  .journey {
+    font-family: 'Sacramento', cursive;
+    text-align: center;
+    color:#cb2305;
+    font-size: 6vw
+    padding-top: 2.5em;
+  }
+
+  .text {
+    font-family: 'Karma', serif;
+    font-size: 2vw;
+    text-align: center;
+  }
+
+  .text2 {
+    font-family: 'Karma', serif;
+    font-size: 3vw;
+    text-align: center;
+  }
+
+  br {
+    display: none;
+  }
+
+  .left {
+    width: 100%;
+    height: auto;
+  }
+
+  .left2 {
+    display: none;
+  }
+
+
+  .right {
+  width: 90vw;
+  height: auto;
+  padding: 5vw;
+  float: none;
+  }
+
+  .align2.slide-in {
+    transform:translateX(100%) scale(0.95);
+  }
+
+  .align1.slide-in {
+    opacity:1;
+    transform:translateX(50%) scale(1);
+    animation-duration: 5s;
+    animation-fill-mode: both;
+    animation-name: fadeIn;
+  }
+
+  .home-links {
+    text-decoration: none !important;
+    color: white;
+    font-family: 'Sacramento', cursive;
+    font-size: 7vw;
+  }
+
+  .home-links-nav  {
+    text-decoration: none;
+    color: #cb2305;
+    font-family: 'Sacramento', cursive;
+    font-size: 2em;
+    padding: 0;
+  }
+
+  div > ul.no-bullets.header-ul {
+    padding: 0;
+    margin: auto;
+  }
+
+  nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+    padding: 0;
+  }
+
+button.navbar-toggler {
+  margin-right: 5px;
+}
+
+  .footer {
+    font-family: 'Sacramento', cursive;
+    text-align: center;
+    font-size: 3vw;
+    color: #cb2305;
+  }
+
+  img.flower {
+    width: auto;
+    height: 3em;
+  }
+
+  .dummy-text {
+    font-size: 3.5vw;
+  }
+
+}
+
+@media only screen and (max-width: 500px){
+  .header {
+    padding-left: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    font-family: 'Josefin Sans', sans-serif;
+    text-shadow: 2px 2px maroon;
+    margin: 0;
+    color: rgb(125, 24, 14);
+    text-decoration: none !important;
+  }
+
+
+  .header-ul {
+    padding-left: 0;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    font-size: 2.7em;
+    margin: 0;
+      color: rgb(125, 24, 14);
+      text-decoration: none !important;
+  }
+
+  ul.no-bullets.header-ul {
+    padding: 1em;
+    text-align: center;
+  }
+
+  li {
+    width: 100vw;
+    text-align: center;
+  }
+
+  .logo {
+    width: 40vw;
+    height: auto;
+    display: inline-block;
+    float: left;
+    padding-top: 20vh;
+    position: fixed;
+    bottom: 5px;
+    left: 5px;
+    z-index: 100;
+    opacity: .5;
+  }
+
+  .journey {
+    font-family: 'Sacramento', cursive;
+    text-align: center;
+    color:#cb2305;
+    font-size: 6vw
+    padding-top: 2.5em;
+  }
+
+  .text {
+    font-family: 'Karma', serif;
+    font-size: 2vw;
+    text-align: center;
+  }
+
+  .text2 {
+    font-family: 'Karma', serif;
+    font-size: 3vw;
+    text-align: center;
+  }
+
+  br {
+    display: none;
+  }
+
+  .left {
+    width: 100%;
+    height: auto;
+    }
+
+    .left2 {
+      display: none;
+    }
+
+    .right {
+    width: 90vw;
+    height: auto;
+    padding: 5vw;
+    float: none;
+    }
+
+    .align2.slide-in {
+      transform:translateX(100%) scale(0.95);
+    }
+
+    .align1.slide-in {
+      opacity:1;
+      transform:translateX(50%) scale(1);
+      animation-duration: 15;
+      animation-fill-mode: both;
+      animation-name: fadeIn;
+    }
+
+
+      .home-links {
+        text-decoration: none;
+        color: white;
+        font-family: 'Sacramento', cursive;
+        font-size: 7vw;
+      }
+
+      .home-links-nav  {
+        text-decoration: none;
+        color: #cb2305;
+        font-family: 'Sacramento', cursive;
+        font-size: 2em;
+        padding: 0;
+      }
+
+      div > ul.no-bullets.header-ul {
+        padding: 0;
+        margin: auto;
+      }
+
+      nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+        padding: 0;
+      }
+
+      .footer {
+        font-family: 'Sacramento', cursive;
+        text-align: center;
+        font-size: 3vw;
+        color: #cb2305;
+      }
+
+      img.flower {
+        width: auto;
+        height: 3em;
+      }
+
+      .dummy-text {
+        font-size: 3.5vw;
+      }
+
+}
