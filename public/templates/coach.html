@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<div class="">
+<div class="page-body">
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#"><img src="./images/Flower.png" alt="Flower" class="flower"></a>
+      <a class="navbar-brand" href="#"><img src="./images/Kari Logo.svg" alt="Flower" class="flower"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -17,9 +17,6 @@
                    <li class="nav-item active">
                        <a ui-sref="wellness" class="home-links-nav bckd-img5" id="bckd-img5">Wellness</a>
                    </li>
-                   <!-- <li class="">
-                       <a ui-sref="about" class="home-links bckd-img2" id="bckd-img2">About Me</a>
-                   </li> -->
                    <li class="nav-item active">
                        <a ui-sref="start" class="home-links-nav bckd-img3" id="bckd-img3">Start Here</a>
                    </li>
@@ -34,15 +31,28 @@
                    </li>
         </li>
       </ul>
-      <!-- <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form> -->
-    </div>
   </nav>
+  <div id="dialog" title="Kari's Story">
+  <p>This is the default dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
+  </div>
+
+
 <div class="title-bar">
-  <h1 class="page-title"><a ui-sref="home" class="home-link">Coaching</a></h1>
+  <h1 class="page-title">Coaching</h1>
 </div>
 
 
 </div>
+<script type="text/javascript">
+$(function() {
+  $("#dialog").dialog({
+    resizable: true
+  });
+  $('.page-body').css('filter', 'blur(5px)');
+});
+$(function() {
+  $('button.ui-button.ui-corner-all.ui-widget.ui-button-icon-only.ui-dialog-titlebar-close').click(function() {
+    $('.page-body').css('filter', 'blur(0)');
+  });
+});
+</script>

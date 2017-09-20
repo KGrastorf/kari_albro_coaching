@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<div class="">
+<div class="page-body">
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#"><img src="./images/Flower.png" alt="Flower" class="flower"></a>
+    <a class="navbar-brand" href="#"><img src="./images/Kari Logo.svg" alt="Flower" class="flower"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -40,8 +40,24 @@
       </form> -->
     </div>
   </nav>
+  <div id="dialog" title="Kari's Story">
+  <p>This is the default dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
+  </div>
 <div class="title-bar">
-  <h1 class="page-title"><a ui-sref="home" class="home-link">Wellness</a></h1>
+  <h1 class="page-title">Wellness</h1>
 </div>
 
 </div>
+<script type="text/javascript">
+$(function() {
+  $("#dialog").dialog({
+    resizable: true
+  });
+  $('.page-body').css('filter', 'blur(5px)');
+});
+$(function() {
+  $('button.ui-button.ui-corner-all.ui-widget.ui-button-icon-only.ui-dialog-titlebar-close').click(function() {
+    $('.page-body').css('filter', 'blur(0)');
+  });
+});
+</script>

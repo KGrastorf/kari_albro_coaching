@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
   $('#bckd-img1').mouseenter(function() {
-    $('#hero').css("background-image", "url(/images/rose.jpg)");
+    $('#hero').css("background-image", "url(/images/Desk.jpg)");
   });
 
 
@@ -16,7 +16,7 @@ $(document).ready(function() {
 
 
   $('#bckd-img4').mouseenter(function() {
-    $('#hero').css("background-image", "url(/images/BeetJuiceSpring.jpg)");
+    $('#hero').css("background-image", "url(/images/Globe.jpg)");
   });
 
 
@@ -26,13 +26,19 @@ $(document).ready(function() {
   });
 
   $('#bckd-img6').mouseenter(function() {
-    $('#hero').css("background-image", "url(/images/Globe.jpg)");
+    $('#hero').css("background-image", "url(/images/nest.jpg)");
   });
 
   $('#bckd-img7').mouseenter(function() {
     $('#hero').css("background-image", "url(/images/somebody.jpg)");
   });
 });
+
+
+// Story Modal
+$( function() {
+  $( "#dialog" ).dialog();
+} );
 
 /*!
  * jQuery Migrate - v3.0.0 - 2016-06-09
