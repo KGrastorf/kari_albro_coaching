@@ -31,6 +31,10 @@ angular.module("kariApp", ["ui.router"]).config(function($stateProvider, $urlRou
         .state("start", {
             url: "/start",
             templateUrl: "./templates/start.html"
+        })
+        .state("quest", {
+            url: "/quest",
+            templateUrl: "./templates/quest.html"
         });
 
     $urlRouterProvider.otherwise("/home");

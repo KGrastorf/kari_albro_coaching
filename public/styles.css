@@ -171,7 +171,39 @@ h1.name {
   height: 100vh;
   padding: 0;
   margin: 0;
-  background-color: rgba(251, 154, 53, .3);
+  background-color: rgb(251, 188, 0);
+}
+
+.title-bar-life {
+  width: 100vw;
+  height: 50vh;
+  padding: 0;
+  margin: 0;
+  background-color: #a9216b;
+}
+
+.title-bar-coach {
+  width: 100vw;
+  height: 50vh;
+  padding: 0;
+  margin: 0;
+  background-color: #008ec2;
+}
+
+.title-bar-wellness {
+  width: 100vw;
+  height: 50vh;
+  padding: 0;
+  margin: 0;
+  background-color: #a9216b;
+}
+
+.title-bar-work {
+  width: 100vw;
+  height: 50vh;
+  padding: 0;
+  margin: 0;
+  background-color: #a9216b;
 }
 
 .left-side {
@@ -191,12 +223,61 @@ h1.name {
 .page-title {
   text-align: center;
   font-family: 'Karma', serif;
-  color: #cb2305;
+  color: rgb(170, 41, 0);
   font-size: 7vw;
-  position: absolute;
-  top: 30%;
-  left: 30%;
-  margin: auto;
+  margin: auto 0;
+  padding: .7em;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-name: fadeIn;
+  z-index: 1;
+}
+
+.page-title-life {
+  text-align: center;
+  font-family: 'Karma', serif;
+  color: #f1efe6;
+  font-size: 7vw;
+  margin: auto 0;
+  padding: .7em;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-name: fadeIn;
+  z-index: 1;
+}
+
+.page-title-coach {
+  text-align: center;
+  font-family: 'Karma', serif;
+  color: #f1efe6;
+  font-size: 7vw;
+  margin: auto 0;
+  padding: .7em;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-name: fadeIn;
+  z-index: 1;
+}
+
+.page-title-wellness {
+  text-align: center;
+  font-family: 'Karma', serif;
+  color: #4bf1ff;
+  font-size: 7vw;
+  margin: auto 0;
+  padding: .7em;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-name: fadeIn;
+  z-index: 1;
+}
+
+.page-title-work {
+  text-align: center;
+  font-family: 'Karma', serif;
+  color: #4bf1ff;
+  font-size: 7vw;
+  margin: auto 0;
   padding: .7em;
   animation-duration: 2s;
   animation-fill-mode: both;
@@ -211,12 +292,12 @@ h1.name {
 }
 
 img.slides {
-  padding-top: -20em
-  width:50vw;
-  height: auto;
+  width: 30vw;
+  height: 20vw;
   overflow: hidden;
-  left: -30px;
-  top: -30px;
+  border: 5px solid rgb(170, 41, 0);
+  filter: drop-shadow(8px 8px 20px gray);
+  margin: 8em;
 }
 
 .fade-in {
@@ -345,6 +426,10 @@ background-color: rgba(155,155,155,.1);
 .columns {
   height: 50vh;
   width: 100vw;
+  background-color: #f1efe6;
+  text-align: center;
+  margin: auto 0;
+  padding-top: 5em;
 }
 
 .parallax {
@@ -414,6 +499,31 @@ padding-top: 1em;
   font-size: 2em;
   color: #cb2305;
   height:7vh;
+  padding-top: 5vh;
+}
+
+div.card.post-cards.ng-scope {
+  width: 20vw;
+  height: 30vh;
+  overflow: hidden;
+  background-color: #f1efe6;
+  background-image: url("./images/mandala.png");
+  }
+
+div.container-fluid.social-cards {
+   font-family: 'Karma', serif;
+   background-color:  #008ec2;
+}
+
+div.card-body {
+  width: 20vw;
+  height: 10vh;
+}
+
+img.card-img-top {
+  width: auto;
+  height: 20vh;
+  overflow: hidden;
 }
 
 .social-cards {
@@ -423,6 +533,11 @@ padding-top: 1em;
   /*flex-wrap: wrap;*/
   padding: 5vw;
   /*display: inline-block;*/
+}
+
+.social-icon {
+  width: 25px;
+  float: right;
 }
 
 .post-cards {
@@ -438,7 +553,123 @@ padding-top: 1em;
   color: #cb2305;
 }
 
+.life-pics {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  overflow: hidden;
+}
 
+.life-pic {
+  width: 30vw;
+  height: 20vw;
+  overflow: hidden;
+  border: 5px solid #a9216b;
+  filter: drop-shadow(8px 8px 20px gray);
+  margin: 8em;
+}
+
+form.questionaire {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-left: 20vw;
+  padding-right: 20vw;
+}
+
+.life-input {
+
+}
+
+.words-life {
+  background-color: #f1efe6;
+  width: 100vw;
+  height: 40vh;
+  margin: auto 0;
+  padding: 8em;
+}
+
+.words-coach {
+  background-color: #f1efe6;
+  width: 100vw;
+  height: 40vh;
+  margin: auto 0;
+  padding: 8em;
+}
+
+.words-title {
+  text-align: center;
+}
+
+.words-paragraph {
+  text-align: center;
+}
+
+.coach-desc {
+  margin: auto 0;
+  text-align: center;
+  padding: 8em
+}
+
+.coach-pic {
+margin: auto;
+width: 50%;
+padding: 10px;
+}
+
+.work-desc {
+  margin: auto 0;
+  text-align: center;
+  padding: 8em;
+  background-color: #f1efe6;
+}
+
+.work-pic {
+margin: auto;
+width: 50%;
+padding: 10px;
+}
+
+.well-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.wellness-pics {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.well-pic {
+  width: 30vw;
+  height: 20vw;
+  overflow: hidden;
+  border: 5px solid #a9216b;
+  filter: drop-shadow(8px 8px 20px gray);
+  margin: 8em;
+}
+
+.quest-title {
+  text-align: center;
+}
+
+.kari-coach-pic {
+  width: 30vw;
+  height: auto;
+  border: 5px solid #a9216b;
+  filter: drop-shadow(8px 8px 20px gray);
+  margin: 8em;
+}
+.coach-title {
+
+}
+
+.coach-paragraph {
+
+}
 
 
 @keyframes fadeIn {
@@ -450,8 +681,6 @@ padding-top: 1em;
     opacity: 1;
   }
 }
-
-
 
 @media only screen and (max-width: 900px){
   .header {
@@ -588,6 +817,7 @@ button.navbar-toggler {
     text-align: center;
     font-size: 3vw;
     color: #cb2305;
+    padding-top: 5vh !important;
   }
 
   img.flower {
@@ -597,6 +827,9 @@ button.navbar-toggler {
 
   .dummy-text {
     font-size: 3.5vw;
+    padding: 5em;
+    text-align: center;
+    margin: auto 0;
   }
 
 }
@@ -733,6 +966,7 @@ button.navbar-toggler {
         text-align: center;
         font-size: 3vw;
         color: #cb2305;
+        padding-top: 5vh;
       }
 
       img.flower {

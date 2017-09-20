@@ -60,13 +60,14 @@
 
     <div class="container-fluid social-cards">
       <div class="blog">
-        <h1 class="">Blog Posts</h1>
+        <h1 class="social">Social</h1>
       </div>
       <div class="card post-cards" style="width: 20rem;" ng-repeat="post in posts">
         <a ng-click="getPost(post._id)" href=""><img class="card-img-top" src="{{post.pic[0].url}}" alt="Card image cap"></a>
         <div class="card-body">
-          <a href="#">
+          <a href="{{post.link}}">
             <p class="card-text">{{post.name}}</p>
+            <a href="{{post.link}}"><img class="social-icon" src="{{post.icon}}" alt=""></a>
           </a>
         </div>
       </div>
