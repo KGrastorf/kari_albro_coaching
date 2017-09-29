@@ -4,6 +4,7 @@ var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 
 var blogCtrl = require('./controllers/blogCtrl.js');
+var leadsCtrl = require('./controllers/leadsCtrl.js');
 
 var app = express();
 
@@ -17,6 +18,11 @@ app.get("/blog", blogCtrl.read);
 app.post("/blog", blogCtrl.create);
 app.put("/blog/:id", blogCtrl.change);
 app.delete("/blog/:id", blogCtrl.destroy);
+
+app.get("/leads", leadsCtrl.read);
+app.post("/leads", leadsCtrl.create);
+app.put("/leads/:id", leadsCtrl.change);
+app.delete("/leads/:id", leadsCtrl.destroy);
 
 mongoose.Promise = global.Promise;
 var promise =  mongoose.connect('mongodb://localhost/myapp', {

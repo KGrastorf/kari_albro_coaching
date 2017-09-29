@@ -49,4 +49,52 @@ angular.module("kariApp")
       $scope.trust = $sce.trustAsHtml;
 
 
+//Leads Ctrl
+      $scope.showLead = function() {
+          mainServ.getLead()
+              .then(function(response) {
+                  $scope.posts = response;
+              });
+      };
+      $scope.showLead();
+
+
+
+      $scope.addLead = function(client) {
+          var addObj = {
+              name: client.name,
+              email: client.email
+          };
+          mainServ.newLead(addObj)
+              .then(function(response) {
+                  $scope.thingclient = "";
+                  $scope.showLead();
+              });
+      };
+
+      $scope.changeLead = (function(client) {
+          mainServ.changeLead(client)
+              .then(function(response) {
+                  $scope.showLead();
+              });
+      });
+
+      $scope.deleteLead = (function(client) {
+          mainServ.deleteLead(client)
+              .then(function(response) {
+                  $scope.showLead();
+              });
+      });
+
+      $scope.getBlog = function(id) {
+          window.scrollTo(0, 0);
+          for (var i = 0; i < $scope.posts.length; i++) {
+              if (id == $scope.posts[i]._id) {
+                  $scope.oneBlog = $scope.posts[i];
+              }
+          }
+      };
+      $scope.trust = $sce.trustAsHtml;
+
+
           });

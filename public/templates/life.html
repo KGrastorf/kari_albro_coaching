@@ -48,11 +48,11 @@
 <img src="./images/nest.jpg" alt="" class="life-pic">
 <img src="./images/nest.jpg" alt="" class="life-pic">
 </div>
-<form class="questionaire" action="submit" method="post">
-  <input class="life-input" type="text" name="" value="" placeholder="Name">
+<form class="questionaire" action="submit" ng-submit="addLead(client)">
+  <input class="life-input" placeholder="Name" ng-model="client.name">
   <br />
-  <input class="life-input" type="text" name="" value="" placeholder="Email">
+  <input class="life-input" placeholder="Email" ng-model="client.email">
   <br />
-  <button class="life-input" type="submit" name="button">Submit</button>
+  <button class="life-input" type="submit" name="button" ng-click="addLead">Submit</button>
 </form>
 </div>

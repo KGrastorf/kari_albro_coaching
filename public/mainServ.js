@@ -38,4 +38,46 @@ angular.module("kariApp")
               return response;
           });
       };
+
+
+//Leads Serv
+    //   .service("mainServ", function($http) {
+        this.getLead = function() {
+            return $http({
+                method: "GET",
+                url: "/leads"
+            }).then(function(response) {
+                return response.data;
+            });
+        };
+
+        this.newLead = function(client) {
+            return $http({
+                method: "POST",
+                url: "/leads",
+                data: client
+            }).then(function(response) {
+                console.log(response);
+                return response.data;
+            });
+        };
+
+        this.changeLead = function(client) {
+            return $http({
+                method: "PUT",
+                url: "/leads/" + client._id,
+                data: client
+            }).then(function(response) {
+                return response;
+            });
+        };
+
+        this.deleteLead = function(client) {
+            return $http({
+                method: "DELETE",
+                url: "/leads/" + client._id
+            }).then(function(response) {
+                return response;
+            });
+        };
     });
