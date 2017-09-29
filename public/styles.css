@@ -6,6 +6,19 @@ font-family: 'Crimson Text', serif;
 font-family: 'Dancing Script', cursive;*/
 /*font-family: 'Karma', serif;*/
 
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
+
+
 body {
   margin: 0;
   border: 0;
@@ -168,7 +181,7 @@ h1.name {
 
 .title-bar {
   width: 100vw;
-  height: 100vh;
+  height: auto;
   padding: 0;
   margin: 0;
   background-color: rgb(251, 188, 0);
@@ -273,6 +286,19 @@ h1.name {
 }
 
 .page-title-work {
+  text-align: center;
+  font-family: 'Karma', serif;
+  color: #4bf1ff;
+  font-size: 7vw;
+  margin: auto 0;
+  padding: .7em;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-name: fadeIn;
+  z-index: 1;
+}
+
+.page-title-test {
   text-align: center;
   font-family: 'Karma', serif;
   color: #4bf1ff;
@@ -423,13 +449,36 @@ background-color: rgba(155,155,155,.1);
 }
 
 /*Start Here*/
-.columns {
-  height: 50vh;
+.now {
   width: 100vw;
+  height: auto;
+  display: block;
+}
+.column-1 {
+  height: 70vh;
+  width: 50vw;
   background-color: #f1efe6;
   text-align: center;
   margin: auto 0;
-  padding-top: 5em;
+  padding: 5em;
+  display: inline-block;
+  float: left;
+}
+
+.column-2 {
+  height: 70vh;
+  width: 50vw;
+  background-color: blue;
+  text-align: center;
+  margin: auto 0;
+  padding: 5em;
+  display: inline-block;
+  float: left;
+}
+
+.somebody {
+  width: 40vw;
+  height: auto;
 }
 
 .parallax {
@@ -437,7 +486,7 @@ background-color: rgba(155,155,155,.1);
     background-image: url('./images/Kari Lake Spring.jpg');
     display: block;
     /* Full height */
-    height: 80vh;
+    height: 180vh;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -502,28 +551,45 @@ padding-top: 1em;
   padding-top: 5vh;
 }
 
+.social {
+  font-family: 'Karma', serif;
+  background-color:  #008ec2;
+  text-align: center;
+  margin: auto 0;
+  padding-top: 2vw;
+}
+
 div.card.post-cards.ng-scope {
-  width: 20vw;
+  width: 15vw;
   height: 30vh;
   overflow: hidden;
   background-color: #f1efe6;
-  background-image: url("./images/mandala.png");
+  background-image: url({{post.pic[0].url}});
+  flex: 0 10 auto;
   }
 
 div.container-fluid.social-cards {
    font-family: 'Karma', serif;
    background-color:  #008ec2;
+
 }
 
 div.card-body {
-  width: 20vw;
+  width: 15vw;
   height: 10vh;
+  color: #ED8B39 !important;
+  text-decoration: none;
+}
+
+p.card-text.ng-binding {
+
 }
 
 img.card-img-top {
   width: auto;
   height: 20vh;
   overflow: hidden;
+  margin: auto 0;
 }
 
 .social-cards {
@@ -548,8 +614,7 @@ img.card-img-top {
   font-family: 'Sacramento', cursive;
   font-size: 7vw;
   text-align: center;
-  margin: 0;
-  padding-top: 15%;
+  margin: auto 0;
   color: #cb2305;
 }
 

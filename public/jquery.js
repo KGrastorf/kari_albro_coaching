@@ -1,36 +1,36 @@
 $(document).ready(function() {
 
   $('#bckd-img1').mouseenter(function() {
-    $('#hero').css("background-image", "url(/images/Desk.jpg)");
+    $('#hero').css("background-image", "url(/images/Desk.jpg)").stop(true, true);
   });
 
 
   $('#bckd-img2').mouseenter(function() {
-    $('#hero').css("background-image", "url(/images/KariFocus.jpg)");
+    $('#hero').css("background-image", "url(/images/KariFocus.jpg)").stop(true, true);
   });
 
 
   $('#bckd-img3').mouseenter(function() {
-    $('#hero').css("background-image", "url(/images/Feetblur2FocusInt.jpg");
+    $('#hero').css("background-image", "url(/images/Feetblur2FocusInt.jpg").stop(true, true);
   });
 
 
   $('#bckd-img4').mouseenter(function() {
-    $('#hero').css("background-image", "url(/images/Globe.jpg)");
+    $('#hero').css("background-image", "url(/images/Globe.jpg)").stop(true, true);
   });
 
 
 
   $('#bckd-img5').mouseenter(function() {
-    $('#hero').css("background-image", "url(/images/Carrots.jpg)");
+    $('#hero').css("background-image", "url(/images/Carrots.jpg)").stop(true, true);
   });
 
   $('#bckd-img6').mouseenter(function() {
-    $('#hero').css("background-image", "url(/images/nest.jpg)");
+    $('#hero').css("background-image", "url(/images/nest.jpg)").stop(true, true);
   });
 
   $('#bckd-img7').mouseenter(function() {
-    $('#hero').css("background-image", "url(/images/somebody.jpg)");
+    $('#hero').css("background-image", "url(/images/somebody.jpg)").stop(true, true);
   });
 });
 

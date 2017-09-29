@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <div class="page-body">
-  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-fixed-top sticky-top navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#"><img src="./images/Kari Logo.svg" alt="Flower" class="flower"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -38,7 +38,6 @@
     <p>This is the default dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
   </div>
 
-
   <div class="">
     <div class="title-bar">
       <span class="page-title">Start Here</span>
@@ -46,7 +45,10 @@
       <img src="./images/nest.jpg" class="slides" alt="">
 
     </div>
-    <div class="columns">
+    <div class="now">
+
+
+    <div class="column-1">
       <h1 class="dummy-text">Start right now...</h1>
 
       <p class="dummy-text">Kari Blurb</p>
@@ -54,18 +56,23 @@
         Auctor urna nunc id cursus metus aliquam eleifend mi. Auctor neque vitae tempus quam pellentesque nec nam. Augue ut lectus arcu bibendum at varius. Magna ac placerat vestibulum lectus mauris ultrices eros. Egestas egestas fringilla phasellus faucibus
         scelerisque eleifend donec pretium. Molestie ac feugiat sed lectus. Tincidunt tortor aliquam nulla facilisi cras fermentum odio eu feugiat. Est velit egestas dui id ornare.</p>
     </div>
+    <div class="column-2">
+        <img src="./images/somebody.jpg" alt="" class="somebody">
+    </div>
+    </div>
     <div class="parallax filter centered-text">
       <p class="unstoppable">Be fearless and unstoppable!</p>
     </div>
 
-    <div class="container-fluid social-cards">
-      <div class="blog">
-        <h1 class="social">Social</h1>
-      </div>
+    <div class="social-box">
+      <h1 class="social">Social</h1>
+    </div>
+
+    <div class="container-fluid social-cards" >
       <div class="card post-cards" style="width: 20rem;" ng-repeat="post in posts">
-        <a ng-click="getPost(post._id)" href=""><img class="card-img-top" src="{{post.pic[0].url}}" alt="Card image cap"></a>
+        <a ng-click="getPost(post._id)" href="{{post.link}}" target="_blank"><img class="card-img-top" src="{{post.pic[0].url}}" alt="Card image cap"></a>
         <div class="card-body">
-          <a href="{{post.link}}">
+          <a href="{{post.link}}" target="_blank">
             <p class="card-text">{{post.name}}</p>
             <a href="{{post.link}}"><img class="social-icon" src="{{post.icon}}" alt=""></a>
           </a>
