@@ -5,6 +5,7 @@ var mongoose = require('mongoose');
 
 var blogCtrl = require('./controllers/blogCtrl.js');
 var leadsCtrl = require('./controllers/leadsCtrl.js');
+var questCtrl = require('./controllers/questCtrl.js');
 
 var app = express();
 
@@ -24,6 +25,11 @@ app.post("/leads", leadsCtrl.create);
 app.put("/leads/:id", leadsCtrl.change);
 app.delete("/leads/:id", leadsCtrl.destroy);
 
+app.get("/quest", questCtrl.read);
+app.post("/quest", questCtrl.create);
+app.put("/quest/:id", questCtrl.change);
+app.delete("/quest/:id", questCtrl.destroy);
+
 mongoose.Promise = global.Promise;
 var promise =  mongoose.connect('mongodb://localhost/myapp', {
   useMongoClient: true,
@@ -35,5 +41,5 @@ mongoose.connection.once('openUri()', function(){
 });
 
 app.listen(3000, function(){
-console.log("Touron is listening to 3000");
+console.log("Kari is listening to 3000");
 });
