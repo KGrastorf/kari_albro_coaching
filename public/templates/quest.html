@@ -39,29 +39,29 @@
 <div class="quest">
   <h1 class="quest-title">This is the Questionaire</h1>
 </div>
-<form class="questionaire">
+<form class="questionaire" ng-submit="addQuest(why)">
   <div class="form-group">
     <label class="form-control-label" for="formGroupExampleInput">1. This is a question.</label>
-    <input type="text" class="form-control" id="formGroupExampleInput1" placeholder="Answer">
+    <input type="text" class="form-control" id="formGroupExampleInput1" placeholder="Answer" ng-model="why.q1">
   </div>
   <div class="form-group">
     <label class="form-control-label" for="formGroupExampleInput2">2. This is a question</label>
-    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Answer">
+    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Answer" ng-model="why.q2">
   </div>
   <div class="form-group">
     <label class="form-control-label" for="formGroupExampleInput2">3. This is a question</label>
-    <input type="text" class="form-control" id="formGroupExampleInput3" placeholder="Answer">
+    <input type="text" class="form-control" id="formGroupExampleInput3" placeholder="Answer" ng-model="why.q3">
   </div>
   <div class="form-group">
     <label class="form-control-label" for="formGroupExampleInput2">4. This is a question.</label>
-    <input type="text" class="form-control" id="formGroupExampleInput4" placeholder="Answer">
+    <input type="text" class="form-control" id="formGroupExampleInput4" placeholder="Answer" ng-model="why.q4">
   </div>
   <div class="form-group">
     <label class="form-control-label" for="formGroupExampleInput2">5. This is a question.</label>
-    <input type="text" class="form-control" id="formGroupExampleInput5" placeholder="Answer">
+    <input type="text" class="form-control" id="formGroupExampleInput5" placeholder="Answer" ng-model="why.q5">
   </div>
   <div class="">
-    <button type="button" name="button">Submit</button>
+    <button type="button" name="button" ng-click="addQuest(why)" ui-sref="#">Submit</button>
   </div>
 </form>
 </div>

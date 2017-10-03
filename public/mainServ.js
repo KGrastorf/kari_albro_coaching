@@ -80,4 +80,45 @@ angular.module("kariApp")
                 return response;
             });
         };
+
+
+//Questionaire
+        this.getQuest = function() {
+            return $http({
+                method: "GET",
+                url: "/quest"
+            }).then(function(response) {
+                return response.data;
+            });
+        };
+
+        this.newQuest = function(why) {
+            return $http({
+                method: "POST",
+                url: "/quest",
+                data: why
+            }).then(function(response) {
+                console.log(response);
+                return response.data;
+            });
+        };
+
+        this.changeQuest = function(why) {
+            return $http({
+                method: "PUT",
+                url: "/quest/" + why._id,
+                data: why
+            }).then(function(response) {
+                return response;
+            });
+        };
+
+        this.deleteQuest = function(why) {
+            return $http({
+                method: "DELETE",
+                url: "/quest/" + why._id
+            }).then(function(response) {
+                return response;
+            });
+        };
     });

@@ -53,34 +53,34 @@ angular.module("kariApp")
       $scope.showLead = function() {
           mainServ.getLead()
               .then(function(response) {
-                  $scope.posts = response;
+                  $scope.leads = response;
               });
       };
       $scope.showLead();
 
 
 
-      $scope.addLead = function(client) {
+      $scope.addLead = function(what) {
           var addObj = {
-              name: client.name,
-              email: client.email
+              name: what.name,
+              email: what.email
           };
           mainServ.newLead(addObj)
               .then(function(response) {
-                  $scope.thingclient = "";
+                  $scope.thingwhat = "";
                   $scope.showLead();
               });
       };
 
-      $scope.changeLead = (function(client) {
-          mainServ.changeLead(client)
+      $scope.changeLead = (function(what) {
+          mainServ.changeLead(what)
               .then(function(response) {
                   $scope.showLead();
               });
       });
 
-      $scope.deleteLead = (function(client) {
-          mainServ.deleteLead(client)
+      $scope.deleteLead = (function(what) {
+          mainServ.deleteLead()
               .then(function(response) {
                   $scope.showLead();
               });
@@ -88,9 +88,60 @@ angular.module("kariApp")
 
       $scope.getBlog = function(id) {
           window.scrollTo(0, 0);
-          for (var i = 0; i < $scope.posts.length; i++) {
-              if (id == $scope.posts[i]._id) {
-                  $scope.oneBlog = $scope.posts[i];
+          for (var i = 0; i < $scope.leads.length; i++) {
+              if (id == $scope.leads[i]._id) {
+                  $scope.oneBlog = $scope.leads[i];
+              }
+          }
+      };
+      $scope.trust = $sce.trustAsHtml;
+
+
+
+      $scope.showLead = function() {
+          mainServ.getLead()
+              .then(function(response) {
+                  $scope.leads = response;
+              });
+      };
+      $scope.showLead();
+
+
+//Questionaire
+      $scope.addQuest = function(why) {
+          var addObj = {
+              q1: why.q1,
+              q2: why.q2,
+              q3: why.q3,
+              q4: why.q4,
+              q5: why.q5
+          };
+          mainServ.newQuest(addObj)
+              .then(function(response) {
+                  $scope.thingwhy = "";
+                  $scope.addQuest();
+              });
+      };
+
+      $scope.changeQuest = (function(why) {
+          mainServ.changeQuest(why)
+              .then(function(response) {
+                  $scope.addQuest();
+              });
+      });
+
+      $scope.deleteQuest = (function(why) {
+          mainServ.deleteQuest()
+              .then(function(response) {
+                  $scope.addQuest();
+              });
+      });
+
+      $scope.getBlog = function(id) {
+          window.scrollTo(0, 0);
+          for (var i = 0; i < $scope.leads.length; i++) {
+              if (id == $scope.leads[i]._id) {
+                  $scope.oneBlog = $scope.leads[i];
               }
           }
       };
