@@ -8,9 +8,9 @@ angular.module("kariApp", ["ui.router"]).config(function($stateProvider, $urlRou
             url: "/test",
             templateUrl: "./templates/test.html"
         })
-        .state("wellness", {
-            url: "/wellness",
-            templateUrl: "./templates/wellness.html"
+        .state("thanks", {
+            url: "/thanks",
+            templateUrl: "./templates/thanks.html"
         })
         .state("blog", {
             url: "/blog",

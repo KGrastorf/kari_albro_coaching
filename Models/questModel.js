@@ -7,7 +7,8 @@ var questSchema = new mongoose.Schema({
     q2: String,
     q3: String,
     q4: String,
-    q5: String
+    q5: String,
+    time : { type : Date, default: Date.now }
 });
 
 

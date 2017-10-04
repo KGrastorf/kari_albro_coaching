@@ -108,6 +108,17 @@ angular.module("kariApp")
 
 
 //Questionaire
+$scope.whys;
+$scope.focused = false;
+
+$scope.showQuest = function() {
+mainServ.getQuest()
+.then(function(response) {
+    $scope.why = response;
+});
+};
+    $scope.showQuest();
+
       $scope.addQuest = function(why) {
           var addObj = {
               q1: why.q1,
