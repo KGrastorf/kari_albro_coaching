@@ -8,30 +8,23 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a ui-sref="life" class="home-links-nav bckd-img1" id="bckd-img6">Life</a>
-        </li>
-        <li class="">
-          <a ui-sref="coach" class="home-links-nav bckd-img1" id="bckd-img1">Coaching</a>
-        </li>
-        <!-- <li class="nav-item active">
-          <a ui-sref="wellness" class="home-links-nav bckd-img5" id="bckd-img5">Wellness</a>
-        </li> -->
-        <li class="nav-item active">
-          <a ui-sref="start" class="home-links-nav bckd-img3" id="bckd-img3">Start Here</a>
-        </li>
-        <li class="nav-item active">
-          <a ui-sref="work" class="home-links-nav bckd-img5" id="bckd-img2">Work With Me</a>
-        </li>
-        <li class="nav-item active">
-          <a ui-sref="test" class="home-links-nav bckd-img5" id="bckd-img5">Success Stories</a>
-        </li>
-        <li class="nav-item active">
-          <a ui-sref="blog" class="home-links-nav bckd-img4" id="bckd-img4">Blog</a>
-        </li>
+                   <li class="">
+                       <a ui-sref="coach" class="home-links-nav bckd-img1" id="bckd-img1">Coaching</a>
+                   </li>
+                   <li class="nav-item active">
+                       <a ui-sref="work" class="home-links-nav bckd-img5" id="bckd-img2">Work With Me</a>
+                   </li>
+                   <li class="nav-item active">
+                       <a ui-sref="start" class="home-links-nav bckd-img3" id="bckd-img3">Start Here</a>
+                   </li>
+                   <li class="nav-item active">
+                       <a ui-sref="test" class="home-links-nav bckd-img5" id="bckd-img5">Success Stories</a>
+                   </li>
+                   <li class="nav-item active">
+                       <a ui-sref="blog" class="home-links-nav bckd-img4" id="bckd-img4">Blog</a>
+                   </li>
         </li>
       </ul>
-
     </div>
   </nav>
   <div id="dialog" title="Kari's Story">
@@ -45,7 +38,11 @@
       <img src="./images/nest.jpg" class="slides" alt="">
 
     </div>
-    <div class="now">
+    <!-- <div class="now"> -->
+
+<div class="row-1">
+
+</div>
 
 
       <div class="column-1">
@@ -60,6 +57,7 @@
         <img src="./images/somebody.jpg" alt="" class="somebody">
       </div>
     </div>
+    <!-- </div> -->
     <div class="parallax filter centered-text">
       <p class="unstoppable">Be fearless and unstoppable!</p>
     </div>
@@ -101,4 +99,8 @@
       $('.page-body').css('filter', 'blur(0)');
     });
   });
+
+  $(document).ready(function(){
+    $(this).scrollTop(0);
+});
 </script>

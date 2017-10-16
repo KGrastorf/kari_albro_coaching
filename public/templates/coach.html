@@ -8,20 +8,14 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-                     <a ui-sref="life" class="home-links-nav bckd-img1" id="bckd-img6">Life</a>
-                 </li>
                    <li class="">
                        <a ui-sref="coach" class="home-links-nav bckd-img1" id="bckd-img1">Coaching</a>
                    </li>
-                   <!-- <li class="nav-item active">
-                       <a ui-sref="wellness" class="home-links-nav bckd-img5" id="bckd-img5">Wellness</a>
-                   </li> -->
-                   <li class="nav-item active">
-                       <a ui-sref="start" class="home-links-nav bckd-img3" id="bckd-img3">Start Here</a>
-                   </li>
                    <li class="nav-item active">
                        <a ui-sref="work" class="home-links-nav bckd-img5" id="bckd-img2">Work With Me</a>
+                   </li>
+                   <li class="nav-item active">
+                       <a ui-sref="start" class="home-links-nav bckd-img3" id="bckd-img3">Start Here</a>
                    </li>
                    <li class="nav-item active">
                        <a ui-sref="test" class="home-links-nav bckd-img5" id="bckd-img5">Success Stories</a>
@@ -41,9 +35,17 @@
 <div class="title-bar-coach">
   <h1 class="page-title-coach">Coaching</h1>
 </div>
-<div class="words-coach">
-  <h1 class="words-title">Words</h1>
-  <p class="words-paragraph">This is where Kari's words are going to go.</p>
+<div class="">
+
+
+<div class="words-coach column-1">
+  <h1 class="words-title">Life Coaching</h1>
+  <p class="words-paragraph">This is where the description of this coaching will be.</p>
+</div>
+<div class="column-2">
+  <h1 class="words-title">Success Coaching</h1>
+  <p class="words-paragraph">This is where the description of this coaching will be.</p>
+</div>
 </div>
 <div class="coach-desc">
 <h1 class="coach-title">Description</h1>
@@ -52,6 +54,13 @@
 <div class="coach-pic">
   <img class="kari-coach-pic" src="./images/Kari Angled.jpg" alt="">
 </div>
+<form class="questionaire form-group" ng-submit="addLead(client)">
+  <input class="life-input form-control" placeholder="Name" ng-model="client.name">
+  <br />
+  <input class="life-input form-control" placeholder="Email" ng-model="client.email">
+  <br />
+  <button class="life-input btn btn-default" type="submit" name="button" ng-click="addLead(client)" ui-sref="quest">Submit</button>
+</form>
 
 </div>
 <script type="text/javascript">
@@ -65,5 +74,9 @@ $(function() {
   $('button.ui-button.ui-corner-all.ui-widget.ui-button-icon-only.ui-dialog-titlebar-close').click(function() {
     $('.page-body').css('filter', 'blur(0)');
   });
+});
+
+$(document).ready(function(){
+    $(this).scrollTop(0);
 });
 </script>

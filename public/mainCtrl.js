@@ -158,5 +158,10 @@ mainServ.getQuest()
       };
       $scope.trust = $sce.trustAsHtml;
 
+    //   $scope.addQuest  = function () {
+    //         $scope.myForm.myField.$setPristine(); // doesn't work
+    //         $scope.myForm.myField.$setPristine(true); // doesn't work
+    //         $scope.myField = ''; // doesn't work
+    //     };
 
           });

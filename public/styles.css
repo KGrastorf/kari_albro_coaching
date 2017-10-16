@@ -28,6 +28,16 @@ body {
 .hero {
   display: flex;
   z-index: -99;
+  /*-webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translate3D(0, 0, 0);
+  -moz-transform: translate3D(0, 0, 0);
+  -o-transform: translate3D(0, 0, 0);
+  -ms-transform: translate3D(0, 0, 0);
+  transform: translate3D(0, 0, 0);*/
 }
 
 /*Home Page*/
@@ -39,10 +49,36 @@ body {
   background-position: center;
   width: 100vw;
   height: 100vh;
-  animation-duration: 5s;
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  -o-animation-duration: 2s;
+  -ms-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
   animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+  -moz-animation-name: fadeIn;
+  -o-animation-name: fadeIn;
+  -ms-animation-name: fadeIn;
   animation-name: fadeIn;
+  -webkit-transition: background .7s linear;
+  -moz-transition: background .7s linear;
+  -o-transition: background .7s linear;
+  -ms-transition: background .7s linear;
   transition: background .7s linear;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
 
 .space {
@@ -105,19 +141,26 @@ body {
   margin: auto;
 }*/
 
+/*.home-links:hover  {
+  text-decoration: none;
+  color: white;
+  font-family: 'Sacramento', cursive;
+  font-size: .8em;
+}*/
+
 .home-links:hover  {
   text-decoration: none;
   color: white;
   font-family: 'Sacramento', cursive;
   font-size: 1.3em;
   -webkit-transition: all .2s ease-in-out;
-  -webkit-transform: scale(1.3);
+  -webkit-transform: scale(1.2);
   -ms-transition: all .2s ease-in-out;
-  -ms-transform: scale(1.3);
+  -ms-transform: scale(1.2);
   -moz-transition: all .2s ease-in-out;
-  -moz-transform: scale(1.3);
+  -moz-transform: scale(1.2);
   transition: all .2s ease-in-out;
-  transform: scale(1.3);
+  transform: scale(1.2);
 }
 
 .home-links-nav  {
@@ -170,6 +213,7 @@ h1.name {
   left: 15px;
   z-index: 100;
   opacity: .7;
+  pointer-events : none;
 }
 
 .logo-home-link {
@@ -315,6 +359,63 @@ h1.name {
   background-color: rgba(255,255,255,0.7);
   padding: 20px;
   z-index: 2;
+  margin: 0 auto;
+}
+
+body > div.ui-dialog.ui-corner-all.ui-widget.ui-widget-content.ui-front.ui-draggable.ui-resizable > div.ui-dialog-titlebar.ui-corner-all.ui-widget-header.ui-helper-clearfix.ui-draggable-handle > button {
+  background-color: white !important;
+  border: 1px solid grey;
+  border-radius: 5%;
+}
+
+body > div.hero.w3-container.w3-center.w3-animate-opacity > ui-view > div > form > button {
+  background-color: #a9216b;
+  color: white;
+  border: 1px solid black;
+  font-family: 'Karma', cursive;
+}
+
+body > div.hero.w3-container.w3-center.w3-animate-opacity > ui-view > div > form > div:nth-child(6) > button {
+  background-color: #a9216b;
+  color: white !important;
+  border: 1px solid black;
+  font-family: 'Karma', cursive;
+  width: 100%;
+  border-top-left-radius: 4px!important;
+  border-bottom-left-radius: 4px!important;
+}
+
+body > div.hero.w3-container.w3-center.w3-animate-opacity > ui-view > div > div.well-button > button {
+  background-color: #a9216b;
+  color: white;
+  border: 1px solid black;
+  font-family: 'Karma', cursive;
+  text-decoration: none !important;
+}
+
+a.work-button {
+  text-decoration: none !important;
+}
+
+button.btn.btn-default {
+  transition: all .2s ease-in-out;
+}
+
+button.btn.btn-default:hover {
+  transform: scale(1.1);
+  background-color: #4bf1ff;
+}
+
+body > div.hero.w3-container.w3-center.w3-animate-opacity > ui-view > div > div.well-button {
+  padding-bottom: 5px;
+}
+
+body > div.hero.w3-container.w3-center.w3-animate-opacity > ui-view > div > form {
+    padding-bottom: 5px;
+}
+
+body > div.hero.w3-container.w3-center.w3-animate-opacity > ui-view > div > div.well-button > button {
+  width: 33vw;
 }
 
 img.slides {
@@ -352,10 +453,11 @@ img.slides {
 }
 
 .left {
-  width: 40;
-  height: auto;
-  margin: 0 auto;
   float: left;
+  width: 65%;
+  overflow: hidden;
+  float: left;
+  background-color: #9cfaff;;
 }
 
 .left2 {
@@ -367,11 +469,8 @@ img.slides {
 
 
 .right {
-width: 40vw;
-height: auto;
-float: right;
-padding: 2em 10em 2em 3em;
-background-color: rgba(155,155,155,.1);
+  overflow: hidden;
+  background-color: rgb(30, 44, 209);
 }
 
 .about {
@@ -448,37 +547,47 @@ background-color: rgba(155,155,155,.1);
   transform:translateX(20%) scale(1);
 }
 
+.left {
+  background-color: rgb(198, 52, 120);
+}
+
+.right {
+  background-color: rgb(221, 128, 21);
+}
+
 /*Start Here*/
-.now {
+/*.now {
   width: 100vw;
   height: auto;
   display: block;
-}
+}*/
 .column-1 {
-  height: 70vh;
+  height: auto;
   width: 50vw;
   background-color: #f1efe6;
   text-align: center;
   margin: auto 0;
-  padding: 5em;
-  display: inline-block;
-  float: left;
+  padding: 2em;
+  display: table-cell;
+  vertical-align: top;
 }
 
 .column-2 {
-  height: 70vh;
+  height: auto;
   width: 50vw;
   background-color: #a9216b;
   text-align: center;
   margin: auto 0;
-  padding: 5em;
-  display: inline-block;
-  float: left;
+  padding: 2em;
+  display: table-cell;
+  vertical-align: top;
 }
 
 .somebody {
   width: 40vw;
   height: auto;
+  padding: 0;
+  margin: 0 auto;
 }
 
 .parallax {
@@ -486,13 +595,19 @@ background-color: rgba(155,155,155,.1);
     background-image: url('./images/Kari Lake Spring.jpg');
     display: block;
     /* Full height */
-    height: 180vh;
+    height: 100vh;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+}
+
+.row-1 {
+  display: table-row;
+  padding: 0;
 }
 
 .dummy-text {
@@ -610,12 +725,18 @@ img.card-img-top {
 
 }
 
+.centered-text {
+  vertical-align: middle;
+}
+
 .unstoppable {
   font-family: 'Sacramento', cursive;
   font-size: 7vw;
   text-align: center;
   margin: auto 0;
   color: #cb2305;
+  vertical-align: middle;
+  padding-top: 45vh;
 }
 
 .life-pics {
@@ -656,12 +777,20 @@ form.questionaire {
   padding: 8em;
 }
 
-.words-coach {
+.column-3 {
   background-color: #f1efe6;
-  width: 100vw;
-  height: 40vh;
+  width: 50vw;
+  height: auto;
   margin: auto 0;
-  padding: 8em;
+  vertical-align: top;
+}
+
+.column-4 {
+  background-color: #a9216b;
+  width: 50vw;
+  height: auto;
+  margin: auto 0;
+  vertical-align: top;
 }
 
 .words-title {
@@ -856,6 +985,10 @@ padding: 10px;
     color: white;
     font-family: 'Sacramento', cursive;
     font-size: 7vw;
+    text-align: center;
+    line-height: 1px;
+    margin: 0;
+    padding: 0;
   }
 
   .home-links-nav  {
@@ -1004,11 +1137,18 @@ button.navbar-toggler {
     }
 
 
+
       .home-links {
         text-decoration: none;
         color: white;
         font-family: 'Sacramento', cursive;
         font-size: 7vw;
+        line-height: .5;
+      }
+
+      .home-links-li {
+        text-align: center;
+        margin: 0 auto;
       }
 
       .home-links-nav  {
@@ -1034,6 +1174,7 @@ button.navbar-toggler {
         font-size: 3vw;
         color: #cb2305;
         padding-top: 5vh;
+        pointer-events : none;
       }
 
       img.flower {

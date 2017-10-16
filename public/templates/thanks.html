@@ -8,17 +8,14 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-                   <a ui-sref="life" class="home-links-nav bckd-img1" id="bckd-img6">Life</a>
-               </li>
                  <li class="">
                      <a ui-sref="coach" class="home-links-nav bckd-img1" id="bckd-img1">Coaching</a>
                  </li>
                  <li class="nav-item active">
-                     <a ui-sref="start" class="home-links-nav bckd-img3" id="bckd-img3">Start Here</a>
+                     <a ui-sref="work" class="home-links-nav bckd-img5" id="bckd-img2">Work With Me</a>
                  </li>
                  <li class="nav-item active">
-                     <a ui-sref="work" class="home-links-nav bckd-img5" id="bckd-img2">Work With Me</a>
+                     <a ui-sref="start" class="home-links-nav bckd-img3" id="bckd-img3">Start Here</a>
                  </li>
                  <li class="nav-item active">
                      <a ui-sref="test" class="home-links-nav bckd-img5" id="bckd-img5">Success Stories</a>
@@ -40,4 +37,8 @@
         window.location = "./#/home";
     }
     setTimeout('Redirect()', 5000);
+
+    $(document).ready(function(){
+    $(this).scrollTop(0);
+});
 </script>

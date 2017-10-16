@@ -8,17 +8,14 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-                   <a ui-sref="life" class="home-links-nav bckd-img1" id="bckd-img6">Life</a>
-               </li>
                  <li class="">
                      <a ui-sref="coach" class="home-links-nav bckd-img1" id="bckd-img1">Coaching</a>
                  </li>
                  <li class="nav-item active">
-                     <a ui-sref="start" class="home-links-nav bckd-img3" id="bckd-img3">Start Here</a>
+                     <a ui-sref="work" class="home-links-nav bckd-img5" id="bckd-img2">Work With Me</a>
                  </li>
                  <li class="nav-item active">
-                     <a ui-sref="work" class="home-links-nav bckd-img5" id="bckd-img2">Work With Me</a>
+                     <a ui-sref="start" class="home-links-nav bckd-img3" id="bckd-img3">Start Here</a>
                  </li>
                  <li class="nav-item active">
                      <a ui-sref="test" class="home-links-nav bckd-img5" id="bckd-img5">Success Stories</a>
@@ -35,27 +32,35 @@
 </div>
 <form class="questionaire" ng-submit="addQuest(why)">
   <div class="form-group">
-    <label class="form-control-label" for="formGroupExampleInput">1. This is a question.</label>
+    <label class="form-control-label" for="formGroupExampleInput">1. What success would you see personally and professionally from our working together? What does that feel like? Look like? What are you doing? (Get specific.) If you could, would you like to look back in 6 months and say to yourself "I did it! Working with Kari was the turning point that changed everything!". </label>
     <input type="text" class="form-control" id="formGroupExampleInput1" placeholder="Answer" ng-model="why.q1">
   </div>
   <div class="form-group">
-    <label class="form-control-label" for="formGroupExampleInput2">2. This is a question</label>
+    <label class="form-control-label" for="formGroupExampleInput2">2. What is your unspoken dream? The one that seems impossible? But if you were to achieve it (the one that would change everything), what will having this do for you? What's most important about this?</label>
     <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Answer" ng-model="why.q2">
   </div>
   <div class="form-group">
-    <label class="form-control-label" for="formGroupExampleInput2">3. This is a question</label>
+    <label class="form-control-label" for="formGroupExampleInput2">3. What is the one thing you could do today to bring you one step closer to that dream?</label>
     <input type="text" class="form-control" id="formGroupExampleInput3" placeholder="Answer" ng-model="why.q3">
   </div>
   <div class="form-group">
-    <label class="form-control-label" for="formGroupExampleInput2">4. This is a question.</label>
+    <label class="form-control-label" for="formGroupExampleInput2">4. What is it that comes completely natural to you? What do you do with such ease and grace that it is a joy and seems effortless? How can doing what you love utilize your greatest strengths? </label>
     <input type="text" class="form-control" id="formGroupExampleInput4" placeholder="Answer" ng-model="why.q4">
   </div>
   <div class="form-group">
-    <label class="form-control-label" for="formGroupExampleInput2">5. This is a question.</label>
+    <label class="form-control-label" for="formGroupExampleInput2">5. What are 5 things you love about your life?</label>
     <input type="text" class="form-control" id="formGroupExampleInput5" placeholder="Answer" ng-model="why.q5">
   </div>
-  <div class="">
-    <button type="button" name="button" ng-click="addQuest(why)" ui-sref="thanks">Submit</button>
+  <div class="input-group-btn">
+    <button class="btn btn-default" type="button" name="button" ng-click="addQuest(why)" ui-sref="thanks">Submit</button>
   </div>
 </form>
 </div>
+
+
+<script type="text/javascript"
+$(document).ready(function(){
+    $(this).scrollTop(0);
+});>
+
+</script>
