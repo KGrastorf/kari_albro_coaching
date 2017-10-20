@@ -393,6 +393,17 @@ body > div.hero.w3-container.w3-center.w3-animate-opacity > ui-view > div > div.
   text-decoration: none !important;
 }
 
+body > div.hero.w3-container.w3-center.w3-animate-opacity > ui-view > div > form > div.input-group-btn > button {
+  background-color: #a9216b;
+  color: white;
+  border: 1px solid black;
+  font-family: 'Karma', cursive;
+  text-decoration: none !important;
+  border-top-left-radius: 4px!important;
+  border-bottom-left-radius: 4px!important;
+  width: 100%;
+}
+
 a.work-button {
   text-decoration: none !important;
 }
@@ -425,6 +436,24 @@ img.slides {
   border: 5px solid rgb(170, 41, 0);
   filter: drop-shadow(8px 8px 20px gray);
   margin: 8em;
+}
+
+/*div > img.kari-quest {
+  width: 100vw;
+  height: 50vh;
+  overflow: hidden;
+}*/
+
+.quest {
+  padding: 3em;
+}
+
+img.kari-quest {
+  top: -10vh;
+  width: 100vw;
+  height: auto;
+  overflow: hidden;
+  border: 5px solid black;
 }
 
 .fade-in {

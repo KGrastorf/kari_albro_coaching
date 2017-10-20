@@ -125,7 +125,9 @@ mainServ.getQuest()
               q2: why.q2,
               q3: why.q3,
               q4: why.q4,
-              q5: why.q5
+              q5: why.q5,
+              q6: why.q6,
+              q7: why.q7
           };
           mainServ.newQuest(addObj)
               .then(function(response) {

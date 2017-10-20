@@ -30,7 +30,7 @@ $(document).ready(function() {
   });
 
   $('#bckd-img7').mouseenter(function() {
-    $('#hero').css("background-image", "url(/images/somebody.jpg)").stop(true, true);
+    $('#hero').css("background-image", "url(/images/BenchQuote.jpg)").stop(true, true);
   });
 });
 
