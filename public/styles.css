@@ -263,6 +263,14 @@ h1.name {
   background-color: #a9216b;
 }
 
+.title-bar-test {
+  width: 100vw;
+  height: 50vh;
+  padding: 0;
+  margin: 0 auto;
+  /*background-color: #f1efe6;*/
+}
+
 .left-side {
   display: inline-block;
   width: 50vw;
@@ -345,6 +353,7 @@ h1.name {
 .page-title-test {
   text-align: center;
   font-family: 'Karma', serif;
+  /*text-shadow: 2px 2px 50px grey;*/
   color: #4bf1ff;
   font-size: 7vw;
   margin: auto 0;
@@ -612,11 +621,112 @@ img.kari-quest {
   vertical-align: top;
 }
 
+.test-column-1 {
+  /*height: auto;
+  width: 25vw;*/
+  background-color: #f1efe6;
+  text-align: center;
+  margin: 0;
+  padding: 2em;
+  display: table-cell;
+  vertical-align: top;
+}
+
+.test-img1 {
+  border: 5px solid #4bf1ff;
+  border-radius: 50%;
+  width: 10vw;
+  height: auto;
+}
+
+.test-column-2 {
+  /*height: auto;
+  width: 75vw;*/
+  background-color: #a9216b;
+  text-align: center;
+  margin: 0 auto;
+  padding: 2em;
+  display: table-cell;
+  vertical-align: top;
+  color: white;
+  font-family: 'Karma', cursive;
+  font-size: 1em;
+}
+
+
+.test-column-3 {
+  /*height: auto;
+  width: 75vw;*/
+  background-color: #a9216b;
+  text-align: center;
+  margin: 0 auto;
+  padding: 2em;
+  display: table-cell;
+  vertical-align: top;
+  color: white;
+  font-family: 'Karma', cursive;
+  font-size: .8em;
+}
+
+
+.test-img2 {
+  border: 5px solid #4bf1ff;
+  border-radius: 50%;
+  width: 10vw;
+  height: auto;
+  margin: 0 auto;
+}
+
+.test-column-4 {
+  /*height: auto;
+  width: 25vw;*/
+  background-color: #f1efe6;
+  text-align: center;
+  margin: 0;
+  padding: 2em;
+  display: table-cell;
+  vertical-align: top;
+}
+
+.test-column-5 {
+  /*height: auto;
+  width: 25vw;*/
+  background-color: #f1efe6;
+  text-align: center;
+  margin: 0;
+  padding: 2em;
+  display: table-cell;
+  vertical-align: top;
+}
+
+.test-img3 {
+  border: 5px solid #4bf1ff;
+  border-radius: 50%;
+  width: 10vw;
+  height: auto;
+}
+
+.test-column-6 {
+  /*height: auto;
+  width: 75vw;*/
+  background-color: #a9216b;
+  text-align: center;
+  margin: 0 auto;
+  padding: 2em;
+  display: table-cell;
+  vertical-align: top;
+  color: white;
+  font-family: 'Karma', cursive;
+  font-size: .8em;
+}
+
 .somebody {
   width: 40vw;
   height: auto;
   padding: 0;
   margin: 0 auto;
+  border: 3px solid #008ec2;
+  box-shadow: 10px 10px 50px black;
 }
 
 .parallax {
@@ -634,10 +744,31 @@ img.kari-quest {
 
 }
 
-.row-1 {
-  display: table-row;
+.grid-1 {
+  display: grid;
+  grid-template-columns: 50% 50%;
   padding: 0;
 }
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  padding: 0;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  padding: 0;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  padding: 0;
+}
+
+
 
 .dummy-text {
   font-size: 1.3vw;
@@ -673,6 +804,25 @@ padding-top: 1em;
   flex-direction: row;
 }
 
+.align-right1 {
+  float: right;
+  margin-right: 20px;
+}
+
+.align-right1.slide-in1 {
+  transform: translateX(55%) scale(0.95);
+}
+
+.slide-in1 {
+  opacity: 0;
+  transition: all 1s;
+}
+
+.slide-in1.active1 {
+  opacity: 1;
+  transform: translateX(0%) scale(1);
+}
+
 .work-with-me {
   width: 33vw;
   height: auto;
@@ -704,8 +854,8 @@ padding-top: 1em;
 }
 
 div.card.post-cards.ng-scope {
-  width: 15vw;
-  height: 30vh;
+  width: 150px;
+  height: 170px;
   overflow: hidden;
   background-color: #f1efe6;
   background-image: url({{post.pic[0].url}});
@@ -719,8 +869,8 @@ div.container-fluid.social-cards {
 }
 
 div.card-body {
-  width: 15vw;
-  height: 10vh;
+  width: 150px;
+  height: 100vh;
   color: #ED8B39 !important;
   text-decoration: none;
 }
@@ -730,24 +880,32 @@ p.card-text.ng-binding {
 }
 
 img.card-img-top {
-  width: auto;
-  height: 20vh;
+  /*width: auto;
+  height: 20vh;*/
   overflow: hidden;
   margin: auto 0;
+  object-fit: cover;
 }
+
+
+
+/*.top {
+  object-fit: contain;
+}*/
 
 .social-cards {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  /*flex-wrap: wrap;*/
   padding: 5vw;
-  /*display: inline-block;*/
+
 }
 
 .social-icon {
   width: 25px;
-  float: right;
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
 }
 
 .post-cards {

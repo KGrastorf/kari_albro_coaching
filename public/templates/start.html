@@ -40,7 +40,7 @@
     </div>
     <!-- <div class="now"> -->
 
-<div class="row-1">
+<div class="grid-1">
 
 </div>
 
@@ -54,7 +54,7 @@
           faucibus scelerisque eleifend donec pretium. Molestie ac feugiat sed lectus. Tincidunt tortor aliquam nulla facilisi cras fermentum odio eu feugiat. Est velit egestas dui id ornare.</p>
       </div>
       <div class="column-2">
-        <img src="./images/somebody.jpg" alt="" class="somebody">
+        <img src="./images/KariHairUp2Focus.jpg" alt="" class="somebody slide-in1 align-right1">
       </div>
     </div>
     <!-- </div> -->
@@ -68,7 +68,7 @@
 
     <div class="container-fluid social-cards">
       <div class="card post-cards" style="width: 20rem;" ng-repeat="post in posts">
-        <a ng-click="getPost(post._id)" href="{{post.link}}" target="_blank"><img class="card-img-top" src="{{post.pic[0].url}}" alt="Card image cap"></a>
+        <a ng-click="getPost(post._id)" href="{{post.link}}" target="_blank" class="top"><img class="card-img-top" src="{{post.pic[0].url}}" alt="Card image cap"></a>
         <div class="card-body">
           <a href="{{post.link}}" target="_blank">
             <p class="card-text">{{post.name}}</p>
@@ -77,6 +77,19 @@
         </div>
       </div>
     </div>
+
+<!-- <div class="container-fluid social-cards">
+    <div class="card post-cards" style="width: 20rem;">
+      <a href="{{post.link}}" target="_blank">
+      <img class="card-img-top" src="..." alt="Card image cap" src="{{post.icon}}">
+      <div class="card-block">
+        <h4 class="card-title">{{post.name}}</h4>
+        <p class="card-text">{{post.name}}</p>
+        <a href="#" class="btn btn-primary"><img class="social-icon" src="{{post.icon}}" alt=""></a>
+      </div>
+    </div>
+  </div> -->
+
     <div class="parallax"></div>
 
 
@@ -103,4 +116,37 @@
   $(document).ready(function(){
     $(this).scrollTop(0);
 });
+
+function debounce(func, wait = 20, immediate = true) {
+  var timeout;
+  return function() {
+    var context = this,
+      args = arguments;
+    var later = function() {
+      timeout = null;
+      if (!immediate) func.apply(context, args);
+    };
+    var callNow = immediate && !timeout;
+    clearTimeout(timeout);
+    timeout = setTimeout(later, wait);
+    if (callNow) func.apply(context, args);
+  };
+};
+
+
+$(window).scroll(function() {
+  var hT = $('.slide-in1').offset().top,
+    hH = $('.slide-in1').outerHeight() / 3,
+    wH = $(window).height(),
+    wS = $(this).scrollTop();
+  if (wS > (hT + hH - wH)) {
+    $('.slide-in1').addClass('active1');
+  } else if (wS < (hT + (hH * 2) - wH)) {
+    $('.slide-in1').removeClass('active1');
+  };
+
+});
+
+window.addEventListener('scroll', debounce(checkSlide));
+</script>
 </script>
