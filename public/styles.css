@@ -265,10 +265,15 @@ h1.name {
 
 .title-bar-test {
   width: 100vw;
-  height: 50vh;
+  height: auto;
   padding: 0;
-  margin: 0 auto;
+  margin: 0;
   /*background-color: #f1efe6;*/
+  display: grid;
+}
+
+.test-grid-all {
+  display: grid;
 }
 
 .left-side {
@@ -354,10 +359,11 @@ h1.name {
   text-align: center;
   font-family: 'Karma', serif;
   /*text-shadow: 2px 2px 50px grey;*/
+  background-color: #a9216b;
   color: #4bf1ff;
   font-size: 7vw;
-  margin: auto 0;
-  padding: .7em;
+  margin: 0;
+  padding-top: .7em;
   animation-duration: 2s;
   animation-fill-mode: both;
   animation-name: fadeIn;
@@ -424,6 +430,7 @@ button.btn.btn-default {
 button.btn.btn-default:hover {
   transform: scale(1.1);
   background-color: #4bf1ff;
+  box-shadow: 5px 5px 50px black;
 }
 
 body > div.hero.w3-container.w3-center.w3-animate-opacity > ui-view > div > div.well-button {
@@ -624,7 +631,7 @@ img.kari-quest {
 .test-column-1 {
   /*height: auto;
   width: 25vw;*/
-  background-color: #f1efe6;
+  background-color: #a9216b;
   text-align: center;
   margin: 0;
   padding: 2em;
@@ -665,7 +672,7 @@ img.kari-quest {
   vertical-align: top;
   color: white;
   font-family: 'Karma', cursive;
-  font-size: .8em;
+  font-size: 1em;
 }
 
 
@@ -680,7 +687,7 @@ img.kari-quest {
 .test-column-4 {
   /*height: auto;
   width: 25vw;*/
-  background-color: #f1efe6;
+  background-color: #a9216b;
   text-align: center;
   margin: 0;
   padding: 2em;
@@ -691,7 +698,7 @@ img.kari-quest {
 .test-column-5 {
   /*height: auto;
   width: 25vw;*/
-  background-color: #f1efe6;
+  background-color: #a9216b;
   text-align: center;
   margin: 0;
   padding: 2em;
@@ -717,7 +724,7 @@ img.kari-quest {
   vertical-align: top;
   color: white;
   font-family: 'Karma', cursive;
-  font-size: .8em;
+  font-size: 1em;
 }
 
 .somebody {
@@ -744,6 +751,17 @@ img.kari-quest {
 
 }
 
+.vine {
+  width: 100vw;
+  height: auto;
+  background-color: #a9216b;
+}
+
+div.vine > img {
+  width: 100vw;
+  height: auto;
+}
+
 .grid-1 {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -754,6 +772,7 @@ img.kari-quest {
   display: grid;
   grid-template-columns: 25% 75%;
   padding: 0;
+  margin: 0;
 }
 
 .grid-3 {
@@ -865,7 +884,7 @@ div.card.post-cards.ng-scope {
 div.container-fluid.social-cards {
    font-family: 'Karma', serif;
    background-color:  #008ec2;
-
+   z-index: 3;
 }
 
 div.card-body {
