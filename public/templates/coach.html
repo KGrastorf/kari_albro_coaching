@@ -27,13 +27,13 @@
       </ul>
     </div>
   </nav>
-  <div id="dialog" title="Kari's Story">
+  <!-- <div id="dialog" title="Kari's Story">
   <p>This is the default dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
-  </div>
+  </div> -->
 
 
 <div class="title-bar-coach">
-  <h1 class="page-title-coach">Coaching</h1>
+  <h1 class="page-title-coach title">Coaching</h1>
 </div>
 <div class="grid-1">
 
@@ -52,7 +52,7 @@
 <p class="coach-paragraph">This is a description of Kari's Coaching...</p>
 </div>
 <div class="coach-pic">
-  <img class="kari-coach-pic" src="./images/Kari Angled.jpg" alt="">
+  <img class="kari-coach-pic" src="./images/KariOcean.png" alt="">
 </div>
 <div class="well-button">
   <h1 class="well-cta-text">Want to find out more?</h1>
@@ -61,17 +61,24 @@
 
 </div>
 <script type="text/javascript">
-$(function() {
-  $("#dialog").dialog({
-    resizable: true
-  });
-  $('.page-body').css('filter', 'blur(5px)');
+// $(function() {
+//   $("#dialog").dialog({
+//     resizable: true
+//   });
+//   $('.page-body').css('filter', 'blur(5px)');
+// });
+// $(function() {
+//   $('button.ui-button.ui-corner-all.ui-widget.ui-button-icon-only.ui-dialog-titlebar-close').click(function() {
+//     $('.page-body').css('filter', 'blur(0)');
+//   });
+// });
+
+TweenMax.from(".title", 2, {
+  opacity:0,
+  scale: 0,
+  ease: Power0.easeOut
 });
-$(function() {
-  $('button.ui-button.ui-corner-all.ui-widget.ui-button-icon-only.ui-dialog-titlebar-close').click(function() {
-    $('.page-body').css('filter', 'blur(0)');
-  });
-});
+
 
 $(document).ready(function(){
     $(this).scrollTop(0);

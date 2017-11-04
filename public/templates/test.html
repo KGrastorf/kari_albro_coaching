@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<div class="page-body">
+<div class="page-body flower1">
   <nav class="navbar navbar-fixed-top sticky-top navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#"><img src="./images/Kari Logo.svg" alt="Flower" class="flower"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,17 +27,17 @@
       </ul>
     </div>
   </nav>
-  <div id="dialog" title="Kari's Story">
+  <!-- <div id="dialog" title="Kari's Story">
   <p>This is the default dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
-  </div>
+  </div> -->
   <div class="grid-test-all">
 
 
 <div class="title-bar-test">
-  <h1 class="page-title-test">Success Stories</h1>
+  <h1 class="page-title-test title">Success Stories</h1>
 </div>
 <div class="vine">
-  <img src="./images/VineLong2.svg" alt="">
+  <img src="./images/VineLong4.svg" alt="">
 </div>
 <div class="">
 <div class="grid-2">
@@ -48,13 +48,13 @@
   <blockquote>
     "Kari Albro is a great coach. She helped me to get clear about how to move forward and enjoy the process of learning, building a business and doing stuff I enjoy. Thank you for staying in the moment, and not moving until we got clarity."
   </blockquote>
-  <cite>Desire G.</cite>
+  <cite>Desiree G.</cite>
 </div>
 </div>
 </div>
 
 <div class="vine">
-  <img src="./images/VineLong2.svg" alt="">
+  <img src="./images/VineLong4.svg" alt="">
 </div>
 
 <div class="">
@@ -73,12 +73,12 @@
 </div>
 </div>
 <div class="vine">
-  <img src="./images/VineLong2.svg" alt="">
+  <img src="./images/VineLong4.svg" alt="">
 </div>
 <div class="">
 <div class="grid-4">
 <div class="test-column-5">
-<img src="./images/Desiree.jpg" alt="" class="test-img1">
+<img src="./images/Jennifer.jpg" alt="" class="test-img1">
 </div>
 <div class="test-column-6">
   <blockquote>
@@ -88,19 +88,44 @@
 </div>
 </div>
 </div>
+<div class="vine">
+  <img src="./images/VineLong4.svg" alt="">
+</div>
+
+<div class="">
+<div class="grid-3">
+  <div class="test-column-3">
+    <blockquote>
+      "I appreciated that she took the time to really listen and understand the situation from my point of view. Kari is a thorough Coach and I recommend her services."
+    </blockquote>
+    <cite>Stacy Thrall -CHC</cite>
+
+  </div>
+  <div class="test-column-4">
+    <img src="./images/Stacy.jpg" alt="" class="test-img2">
+  </div>
+
+</div>
+</div>
 </div>
 </div>
 <script type="text/javascript">
-$(function() {
-  $("#dialog").dialog({
-    resizable: true
-  });
-  $('.page-body').css('filter', 'blur(5px)');
-});
-$(function() {
-  $('button.ui-button.ui-corner-all.ui-widget.ui-button-icon-only.ui-dialog-titlebar-close').click(function() {
-    $('.page-body').css('filter', 'blur(0)');
-  });
+// $(function() {
+//   $("#dialog").dialog({
+//     resizable: true
+//   });
+//   $('.page-body').css('filter', 'blur(5px)');
+// });
+// $(function() {
+//   $('button.ui-button.ui-corner-all.ui-widget.ui-button-icon-only.ui-dialog-titlebar-close').click(function() {
+//     $('.page-body').css('filter', 'blur(0)');
+//   });
+// });
+
+TweenMax.from(".title", 2, {
+  opacity:0,
+  scale: 0,
+  ease: Power0.easeOut
 });
 
 $(document).ready(function(){

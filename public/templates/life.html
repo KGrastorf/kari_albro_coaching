@@ -32,7 +32,7 @@
   </nav>
 
 <div class="col-md-12 title-bar-life">
-  <h1 class="page-title-life">Life</h1>
+  <h1 class="page-title-life title">Life</h1>
 </div>
 
 <div class="words-life">
@@ -51,3 +51,14 @@
   <button class="life-input" type="submit" name="button" ng-click="addLead(client)" ui-sref="quest">Submit</button>
 </form>
 </div>
+
+<script type="text/javascript">
+
+TweenMax.from(".title", 2, {
+  opacity:0,
+  scale: 0,
+  ease: Power0.easeOut
+});
+
+
+</script>

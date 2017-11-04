@@ -32,9 +32,9 @@ angular.module("kariApp", ["ui.router"]).config(function($stateProvider, $urlRou
             url: "/start",
             templateUrl: "./templates/start.html"
         })
-        .state("connect", {
-            url: "/connect",
-            templateUrl: "./templates/connect.html"
+        .state("about", {
+            url: "/about",
+            templateUrl: "./templates/about.html"
         })
         .state("quest", {
             url: "/quest",

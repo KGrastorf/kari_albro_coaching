@@ -26,11 +26,11 @@
       </ul>
     </div>
   </nav>
-  <div id="dialog" title="Kari's Story">
+  <!-- <div id="dialog" title="Kari's Story">
   <p>This is the default dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
-  </div>
+  </div> -->
 <div class="title-bar-work">
-  <h1 class="page-title-work">Work With Me</h1>
+  <h1 class="page-title-work title">Work With Me</h1>
 </div>
 <div class="work-desc">
 <h1 class="work-title">Description</h1>
@@ -45,21 +45,28 @@
 </div>
 </div>
 <script type="text/javascript">
-$(function() {
-  $("#dialog").dialog({
-    resizable: true
-  });
-  $('.page-body').css('filter', 'blur(10px)');
-  // $('.page-body').css('filter', 'grayscale(100%)');
-});
-$(function() {
-  $('button.ui-button.ui-corner-all.ui-widget.ui-button-icon-only.ui-dialog-titlebar-close').click(function() {
-    $('.page-body').css('filter', 'blur(0)');
-    // $('.page-body').css('filter', 'grayscale(0)');
-  });
-});
+// $(function() {
+//   $("#dialog").dialog({
+//     resizable: true
+//   });
+//   $('.page-body').css('filter', 'blur(10px)');
+//   // $('.page-body').css('filter', 'grayscale(100%)');
+// });
+// $(function() {
+//   $('button.ui-button.ui-corner-all.ui-widget.ui-button-icon-only.ui-dialog-titlebar-close').click(function() {
+//     $('.page-body').css('filter', 'blur(0)');
+//     // $('.page-body').css('filter', 'grayscale(0)');
+//   });
+// });
 
 $(document).ready(function(){
     $(this).scrollTop(0);
 });
+
+TweenMax.from(".title", 2, {
+  opacity:0,
+  scale: 0,
+  ease: Power0.easeOut
+});
+
 </script>
