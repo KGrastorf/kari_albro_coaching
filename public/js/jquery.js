@@ -6,7 +6,7 @@ $(document).ready(function() {
 
 
   $('#bckd-img2').mouseenter(function() {
-    $('#hero').css("background-image", "url(/images/KariFocus.jpg)").stop(true, true);
+    $('#hero').css("background-image", "url(/images/KariCloudsFlip.jpg)").stop(true, true);
   });
 
 

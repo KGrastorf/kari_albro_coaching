@@ -6,6 +6,9 @@ font-family: 'Crimson Text', serif;
 font-family: 'Dancing Script', cursive;*/
 /*font-family: 'Karma', serif;*/
 
+nav {
+  background-color: transparent;
+}
 
 html {
   -webkit-box-sizing: border-box;
@@ -40,14 +43,16 @@ body {
   transform: translate3D(0, 0, 0);*/
 }
 
-.flex-header {
+.home-title{
   position: absolute;
-  text-align: c
+  font-family: 'Karma', serif;
+  font-size: 5vw;
+  padding-top: 5vh;
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
   left: 0;
   right: 0;
-
 }
 
 /*Home Page*/
@@ -100,8 +105,8 @@ body {
   font-family: 'Karma', serif;
   text-align: center;
   margin: 0 auto;
-  padding-top: 8vw;
-  font-size: 3vw;
+  padding-top: 3vw;
+  font-size: 5vw;
   align-self: center;
   text-shadow: 5px solid #a9216b;
 }
@@ -131,11 +136,11 @@ body {
   flex-direction: row;
   justify-content: space-around !important;
   justify-content: center;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Sacrmento', cursive;
   text-shadow: 2px 2px #a9216b;
   font-size: 2.7em;
   margin: 0;
-    -webkit-background-clip: text;*/
+    -webkit-background-clip: text;
     color: rgb(125, 24, 14);
     text-decoration: none !important;
     z-index: 100;
@@ -240,11 +245,11 @@ h1.name {
   background:
     /* top, transparent red, faked with gradient */
     linear-gradient(
-      rgba(169, 33, 107, 0.55),
-      rgba(169, 33, 107, 0.55)
+      rgba(128, 0, 32, 0.55),
+      rgba(128, 0, 32, 0.55)
     ),
     /* bottom, image */
-  url('./images/flowerfield.gif');
+  url('./images/fire.gif');
   background-size: cover;
 }
 
@@ -256,6 +261,15 @@ h1.name {
   background-color: #a9216b;
 }
 
+video.fire {
+  position: absolute; // Play the video in full screen mode
+  top: 0px;
+  left: 0px;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1; // Put the video behind all other elements
+}
+
 .title-bar-coach {
   width: 100vw;
   height: 50vh;
@@ -265,11 +279,11 @@ h1.name {
   background:
     /* top, transparent red, faked with gradient */
     linear-gradient(
-      rgba(169, 33, 107, 0.55),
-      rgba(169, 33, 107, 0.55)
+      rgba(128, 0, 32, 0.55),
+      rgba(128, 0, 32, 0.55)
     ),
     /* bottom, image */
-  url('./images/flowerfield.gif');
+  url('./images/fire.gif');
   background-size: cover;
 }
 
@@ -282,11 +296,11 @@ h1.name {
   background:
     /* top, transparent red, faked with gradient */
     linear-gradient(
-      rgba(169, 33, 107, 0.55),
-      rgba(169, 33, 107, 0.55)
+      rgba(128, 0, 32, 0.55),
+      rgba(128, 0, 32, 0.55)
     ),
     /* bottom, image */
-  url('./images/flowerfield.gif');
+  url('./images/fire.gif');
   background-size: cover;
 }
 
@@ -307,11 +321,11 @@ h1.name {
   background:
     /* top, transparent red, faked with gradient */
     linear-gradient(
-      rgba(169, 33, 107, 0.55),
-      rgba(169, 33, 107, 0.55)
+      rgba(128, 0, 32, 0.55),
+      rgba(128, 0, 32, 0.55)
     ),
     /* bottom, image */
-  url('./images/flowerfield.gif');
+  url('./images/fire.gif');
   background-size: cover;
 }
 
@@ -320,7 +334,6 @@ h1.name {
   height: auto;
   padding: 0;
   margin: 0;
-  /*background-color: #a9216b;*/
   display: grid;
 }
 
@@ -764,11 +777,11 @@ img.kari-quest {
   background:
     /* top, transparent red, faked with gradient */
     linear-gradient(
-      rgba(169, 33, 107, 0.55),
-      rgba(169, 33, 107, 0.55)
+      rgba(246, 153, 48, 0.55),
+      rgba(246, 153, 48, 0.55)
     ),
     /* bottom, image */
-    url('./images/Flower 3 really slow.gif');
+    url('./images/Flower 3 slow.gif');
   background-position: center;
   background-size: cover;
   /*filter: opacity(.5);*/
@@ -1105,6 +1118,12 @@ padding: 10px;
   height: auto;
   margin: 8em;
 }
+
+.ocean-pic {
+    width: 100vw;
+    height: auto;
+}
+
 .coach-title {
 
 }
@@ -1396,6 +1415,18 @@ button.navbar-toggler {
         text-align: center;
         margin: 0 auto;
       }
+/*
+      .home-title {
+        position: inherit;
+        text-align: center;
+        margin: 0 auto;
+        align-self: center;
+        font-family: "Karma", serif !important;
+        color: white !important;
+        text-shadow: 2px 2px #a9216b;
+        font-size: 3vw;
+
+      }*/
 
       .home-links-nav  {
         text-decoration: none;
