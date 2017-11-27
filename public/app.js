@@ -20,6 +20,10 @@ angular.module("kariApp", ["ui.router"]).config(function($stateProvider, $urlRou
             url: "/coach",
             templateUrl: "./templates/coach.html"
         })
+        .state("coaches", {
+            url: "/coaches",
+            templateUrl: "./templates/coaches.html"
+        })
         .state("life", {
             url: "/life",
             templateUrl: "./templates/life.html"

@@ -23,16 +23,26 @@
                  <li class="nav-item active">
                      <a ui-sref="blog" class="home-links-nav bckd-img4" id="bckd-img4">Blog</a>
                  </li>
+                 <li class="nav-item active">
+                     <a ui-sref="about" class="home-links-nav bckd-img4" id="bckd-img4">About</a>
+                 </li>
       </li>
     </ul>
   </div>
 </nav>
-<div class="">
+<!-- <div class="">
   <h1 class="quest-title title">Are you ready for your best life?</h1>
   <img src="./images/KariSmooth.jpg" alt="" class="kari-quest">
-</div>
+</div> -->
+<div class="parallax-3"></div>
 <div class="quest">
-  <!-- <h1 class="quest-title title">Are you ready for your best life?</h1> -->
+  <div class="quest-space-top"></div>
+  <h1 class="quest-title">Survey page</h1>
+  <div class="quest-space-middle"></div>
+  <p class="quest-intro">Please fill out the questions below about what you would like to change or  about the beautiful life you would like to create for you.
+    <br/></br/>
+I will reach out to you with an article book or a referral. If there is a way that I can support you we will schedule a powerful conversation. This is not a sales pitch by the way. It's about getting clarity. Whether we work together or not you will go away with at least one powerful insight as to what is holding you back from achieving your dreams. </p>
+<div class="quest-space-bottom"></div>
 </div>
 <form class="questionaire" ng-submit="addQuest(why)">
   <div class="form-group">
@@ -63,10 +73,15 @@
     <label class="form-control-label" for="formGroupExampleInput2">Email</label>
     <input type="text" class="form-control" id="formGroupExampleInput5" placeholder="Email" ng-model="why.q7">
   </div>
+  <div class="form-group">
+    <label class="form-control-label" for="formGroupExampleInput2">Phone Number</label>
+    <input type="text" class="form-control" id="formGroupExampleInput5" placeholder="Phone Number" ng-model="why.q8">
+  </div>
   <div class="input-group-btn">
     <button class="btn btn-default" type="button" name="button" ng-click="addQuest(why)" ui-sref="thanks">Submit</button>
   </div>
 </form>
+<div class="parallax-3"></div>
 </div>
 
 

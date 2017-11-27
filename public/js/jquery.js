@@ -6,7 +6,7 @@ $(document).ready(function() {
 
 
   $('#bckd-img2').mouseenter(function() {
-    $('#hero').css("background-image", "url(/images/KariCloudsFlip.jpg)").stop(true, true);
+    $('#hero').css("background-image", "url(/images/KariSquating3.jpg)").stop(true, true);
   });
 
 
@@ -32,6 +32,7 @@ $(document).ready(function() {
   $('#bckd-img7').mouseenter(function() {
     $('#hero').css("background-image", "url(/images/BenchQuote.jpg)").stop(true, true);
   });
+
 });
 
 

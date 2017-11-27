@@ -10,6 +10,7 @@ var questSchema = new mongoose.Schema({
     q5: String,
     q6: String,
     q7: String,
+    q8: String,
     time : { type : Date, default: Date.now }
 });
 

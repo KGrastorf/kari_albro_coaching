@@ -23,25 +23,30 @@
                    <li class="nav-item active">
                        <a ui-sref="blog" class="home-links-nav bckd-img4" id="bckd-img4">Blog</a>
                    </li>
+                   <li class="nav-item active">
+                       <a ui-sref="about" class="home-links-nav bckd-img4" id="bckd-img4">About</a>
+                   </li>
         </li>
       </ul>
     </div>
   </nav>
-<div class="title-bar">
+<div class="title-bar blog-grid">
   <h1 class="page-title title">Blog</h1>
 </div>
-<div class="fire">
-  <!-- <video autoplay loop muted width="100%">
-    <source src="./images/firevid2.mp4" type="video/mp4" />
-    <source src="./images/firevid2.ogg" type="video/ogg" />
-    <source src="./images/firevid2.webm" type="video/webm" /> -->
-  </video>
-</div>
+<div class="parallax-3"></div>
+  <div class="blog-grid-1">
+    <div class="placeholder">
+    </div>
 
-
+  </div>
+<div class="parallax-3"></div>
 </div>
 
 <script type="text/javascript">
+$(document).ready(function(){
+    $(this).scrollTop(0);
+});
+
 TweenMax.from(".title", 2, {
   opacity:0,
   scale: 0,
@@ -50,8 +55,3 @@ TweenMax.from(".title", 2, {
 
 
 </script>
-<style media="screen">
-  .home-title {
-    display: none !important;
-  }
-</style>
