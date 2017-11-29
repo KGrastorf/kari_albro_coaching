@@ -1503,6 +1503,30 @@ footer {
   padding-top: 2vw;
 }*/
 
+body > div.hero.w3-container.w3-center.w3-animate-opacity > ui-view > div > div.social-box > div.container-fluid.social-cards > div:nth-child(1) > a > img {
+  height: 30vh;
+}
+
+body > div.hero.w3-container.w3-center.w3-animate-opacity > ui-view > div > div.social-box > div.container-fluid.social-cards > div:nth-child(2) > a > img {
+  height: 30vh;
+}
+
+body > div.hero.w3-container.w3-center.w3-animate-opacity > ui-view > div > div.social-box > div.container-fluid.social-cards > div:nth-child(3) > a > img {
+  height: 30vh;
+}
+
+body > div.hero.w3-container.w3-center.w3-animate-opacity > ui-view > div > div.social-box > div.container-fluid.social-cards > div:nth-child(4) > a > img {
+  height: 30vh;
+}
+
+body > div.hero.w3-container.w3-center.w3-animate-opacity > ui-view > div > div.social-box > div.container-fluid.social-cards > div:nth-child(5) > a > img {
+  height: 30vh;
+}
+
+body > div.hero.w3-container.w3-center.w3-animate-opacity > ui-view > div > div.social-box > div.container-fluid.social-cards > div:nth-child(6) > a > img {
+  height: 30vh;
+}
+
 div.card.post-cards.ng-scope {
   width: 150px;
   height: 170px;
@@ -1521,27 +1545,31 @@ div.container-fluid.social-cards {
 }
 
 div.card-body {
-  width: 150px;
+  width: auto;
   height: 100vh;
   color: #ED8B39 !important;
   text-decoration: none;
 }
 
 p.card-text.ng-binding {
-
+  font-family: "Karma", serif;
+  font-size: 2vw;
+  text-decoration: none;
 }
 
 img.card-img-top {
   overflow: hidden;
   margin: auto 0;
-  object-fit: cover;
+  /*object-fit: cover;*/
+  top: 0;
 }
 
 .social-cards {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  padding: 5vw;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /*padding: 20vw 5vw 5vw 5vw;*/
 
 }
 
@@ -1554,6 +1582,8 @@ img.card-img-top {
 
 .post-cards {
   box-shadow: 5px 5px 50px #4bf1ff;
+  margin-top: 5vw;
+  padding: 0;
 }
 
 /*New Social*/
@@ -1782,7 +1812,7 @@ padding: 10px;
   text-align: center;
   padding: 8em;*/
   display: grid;
-  grid-template-columns: 10% 80% 10%;
+  grid-template-columns: 10% 40% 10% 30% 10%;
   grid-template-rows: 10% 35% 10% 35% 10%;
   background-color: #f1efe6;
 }
@@ -1794,6 +1824,7 @@ padding: 10px;
   text-align: center;
   font-family: "Karma", serif;
   font-size: 2vw;
+  padding-top: 10vh;
 }
 
 .work-list {
@@ -1802,6 +1833,14 @@ padding: 10px;
   margin:0 auto;
   font-family: "Karma", serif;
   font-size: 2vw;
+}
+
+.work-pic-kari {
+  grid-column:4/5;
+  grid-row: 2/5;
+  width: 30vw;
+  height: auto;
+  padding-top: 10vh;
 }
 
 .work-space-top {
