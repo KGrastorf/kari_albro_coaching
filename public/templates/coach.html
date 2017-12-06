@@ -1,81 +1,75 @@
 <!DOCTYPE html>
 <div class="page-body">
   <nav class="navbar navbar-fixed-top sticky-top navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#"><img src="./images/Kari Logo.svg" alt="Flower" class="flower"></a>
+    <a class="navbar-brand" href="#"><img src="./images/Kari Logo.svg" alt="Flower" class="flower"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-                   <li class="">
-                       <a ui-sref="coach" class="home-links-nav bckd-img1" id="bckd-img1">Coaching</a>
-                   </li>
-                   <li class="nav-item active">
-                       <a ui-sref="work" class="home-links-nav bckd-img5" id="bckd-img2">Work With Me</a>
-                   </li>
-                   <li class="nav-item active">
-                       <a ui-sref="start" class="home-links-nav bckd-img3" id="bckd-img3">Start Here</a>
-                   </li>
-                   <li class="nav-item active">
-                       <a ui-sref="test" class="home-links-nav bckd-img5" id="bckd-img5">Success Stories</a>
-                   </li>
-                   <li class="nav-item active">
-                       <a ui-sref="blog" class="home-links-nav bckd-img4" id="bckd-img4">Blog</a>
-                   </li>
-                   <li class="nav-item active">
-                       <a ui-sref="about" class="home-links-nav bckd-img4" id="bckd-img4">About</a>
-                   </li>
+        <li class="">
+          <a ui-sref="coach" class="home-links-nav bckd-img1" id="bckd-img1">Coaching</a>
+        </li>
+        <li class="nav-item active">
+          <a ui-sref="work" class="home-links-nav bckd-img5" id="bckd-img2">Work With Me</a>
+        </li>
+        <li class="nav-item active">
+          <a ui-sref="start" class="home-links-nav bckd-img3" id="bckd-img3">Start Here</a>
+        </li>
+        <li class="nav-item active">
+          <a ui-sref="test" class="home-links-nav bckd-img5" id="bckd-img5">Success Stories</a>
+        </li>
+        <li class="nav-item active">
+          <a ui-sref="blog" class="home-links-nav bckd-img4" id="bckd-img4">Blog</a>
+        </li>
+        <li class="nav-item active">
+          <a ui-sref="about" class="home-links-nav bckd-img4" id="bckd-img4">About</a>
+        </li>
         </li>
       </ul>
     </div>
   </nav>
-  <!-- <div id="dialog" title="Kari's Story">
-  <p>This is the default dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
-  </div> -->
-
-
-<div class="title-bar-coach coach-grid">
-  <h1 class="page-title-coach title">Coaching</h1>
-</div>
-<!-- <div class="parallax-3"></div> -->
-<!-- <div class="coach-grid-1">
-  <div class="coach-space-top"></div>
-  <h1 class="coach-header-1">Are you getting in your way?</h1>
-  <div class="coach-space-bottom"></div>
-</div>
-
-<div class="coach-grid-2">
-  <p class="first-p"> What’s preventing you from moving forward, achieving the dreams you desire? Living the life you want, the life you are meant to live?<br/></br/>
-You feel in your bones, your heart you are meant to be of service to others but wtf something, life, shit i can’t do this, I am not good enough, no one will pay me for my services, plain out fear.  Excuses are holding me back.<br/></br/>
-You’ve learned all these amazing tools but still get stuck.<br/></br/>
-Let me tell you right here right now you are meant for this. You are fricken amazing. You are on the right journey. The perfect journey for you! Everything you have experienced in your life has prepared you for this moment, this day- everything you do and experience today now is preparing you for tomorrow your future.<br/></br/>
-<em>I am fiercely committed to you!</em></p>
-</div> -->
-<div class="parallax-3"></div>
-
-<div class="start-5">
-  <div class="life-container">
-    <p class="cta"><a ui-sref="life">Self-Love<br /> Coaching</a></p>
+  <div class="title-bar-coach coach-grid">
+    <h1 class="page-title-coach title">Coaching</h1>
   </div>
-  <div class="coach-container">
-    <p class="cta"><a ui-sref="coaches">For<br /> Coaches</a></p>
-  </div>
-</div>
+  <div class="parallax-3"></div>
+  <div class="coach-grid-2">
+    <div class="ur">
 
-<div class="parallax-3"></div>
+    </div>
+    <div class="ul">
+
+    </div>
+    <div class="lr">
+
+    </div>
+    <div class="ll">
+
+    </div>
+  </div>
+  <div class="parallax-3"></div>
+  <div class="start-5">
+    <div class="life-container">
+      <p class="cta"><a ui-sref="life">Self-Love<br /> Coaching</a></p>
+    </div>
+    <div class="coach-container">
+      <p class="cta"><a ui-sref="coaches">For<br /> Coaches</a></p>
+    </div>
+  </div>
+
+  <div class="parallax-3"></div>
 
 </div>
 <script type="text/javascript">
+  TweenMax.from(".title", 2, {
+    opacity: 0,
+    scale: 0,
+    ease: Power0.easeOut
+  });
 
-TweenMax.from(".title", 2, {
-  opacity:0,
-  scale: 0,
-  ease: Power0.easeOut
-});
 
-
-$(document).ready(function(){
+  $(document).ready(function() {
     $(this).scrollTop(0);
-});
+  });
 </script>
