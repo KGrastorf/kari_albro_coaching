@@ -54,10 +54,6 @@
     <p class="if">It’s your time. <br />Are you ready to achieve unstoppable success and get the results you want? <br />What are you waiting for? <br />When will be the perfect time?<br /> NOW! <br />TODAY!<br /> You are worth it. <br />Let your light shine.<br />      I believe in you!!!</p>
     <p class="testimonials" id="imonials"><a ui-sref="test">Hear what my clients have to say.</a></p>
   </div>
-  <!-- <div class="parallax-3"></div>
-    <div class="test-link" id="test">
-      <p class="testimonials" id="imonials"><a ui-sref="test">Hear what my clients have to say.</a></p>
-    </div> -->
   <div class="parallax-3"></div>
   <div class="parallax">
     <p class="unstoppable">Unstoppable Life!</p>
@@ -66,7 +62,6 @@
   <div class="grid-1">
     <div class="column-1">
       <img src="./images/bullmand5.png" alt="" class="somebody slide-in1 align-right1">
-      <!-- <img src="./images/mandala.png" alt="" class="mandala"> -->
     </div>
     <div class="column-2">
 
@@ -93,6 +88,7 @@
       <h1 class="if-3a">Fearless and Honest</h1>
       <p class="if-3b">I am a no bones around kind of person. I will say what needs to be said from a loving safe place. I truly listen to you and you will be heard with an open heart and I care for you unconditionally. I am fiercely committed to you. I will challenge
         you to look at yourself and your life differently. My coaching comes from a place of honesty and depth.</p>
+        <blockquote class="if-3c"><em>"The first and most important person you must believe in is yourself." <br /></br/> -Toni Sorenson</em></blockquote>
     </div>
     <div class="column-2a">
       <img src="./images/KariOceanSig.png" alt="" class="somebody2">
@@ -103,9 +99,9 @@
   <div class="parallax-3"></div>
   <!-- <div class="social-box">
       <h1 class="social">Social</h1>
-    </div>
+    </div> -->
 
-    <div class="container-fluid social-cards view overlay hm-teal-slight">
+    <!-- <div class="container-fluid social-cards-flex view overlay hm-teal-slight">
       <div class="card post-cards col-lg-4 view overlay hm-teal-slight" style="width: 20rem;" ng-repeat="post in posts">
         <a ng-click="getPost(post._id)" href="{{post.link}}" target="_blank" class="top"><img class="card-img-top img-fluid" src="{{post.pic[0].url}}" alt="Card image cap"></a>
         <div class="card-body">
@@ -114,10 +110,10 @@
             <a href="{{post.link}}"><img class="social-icon" src="{{post.icon}}" alt=""></a>
           </a>
         </div>
-      </div> -->
-  <!-- <div class="clearfix" ng-if="$index%3==1"></div>
-    <div ng-repeat-end=""></div> -->
-  <!-- </div> -->
+      </div>  -->
+   <!-- <div class="clearfix" ng-if="$index%3==0"></div>
+    <div ng-repeat-end=""></div>
+  </div> -->
 
 
 
@@ -135,133 +131,110 @@
 
 
   <div class="social-box">
+
     <h1 class="social">Social</h1>
-    <!-- <div class="spacer-box1"></div>
-    <div class="box-1">
-      <img src="./images/Kari Squating.jpg" alt="" class="soc-exp">
-    </div>
-     <div class="box-2">
-      <img src="./images/Kari Squating.jpg" alt="" class="soc-exp">
-    </div>
-    <div class="box-3">
-      <img src="./images/Kari Squating.jpg" alt="" class="soc-exp">
-    </div> -->
 
-    <div class="card sc-1" style="width: 20rem;">
-      <img class="card-img-top" src="..." alt="Card image cap">
+    <div class="card sc-1 view overlay hm-stylish-strong" style="width: 20rem;" ng-repeat="post in posts">
+      <img class="card-img-top" src="{{post.pic[0].url}}" alt="Card image cap">
+      <div class="mask">
+        <p class="share">Share</p>
+        <a href="https://www.facebook.com/sharer.php?u={{post.link}}" class="fb-a" target="_blank"><img src="./images/chat.svg" class="share-fb" /></a>
+        <!-- <hr width="1" size="500" style="filter: invert(1);" > -->
+
+        <a href="https://www.instagram.com/karialbrocoaching/" class="in-a" target="_blank"><img src="./images/instagram.svg" class="share-in" /></a>
+
+          <a href="http://twitter.com/share?text={{post.link}}" class="tw-a" target="_blank"><img src="./images/twitter.svg" class="share-tw" /></a>
+      </div>
       <div class="card-body">
-        <h4 class="card-title">Card title</h4>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <h4 class="card-title">{{post.name}}</h4>
+        <!-- <a class="card-text">{{post.name}}</a> -->
       </div>
     </div>
 
-    <div class="card sc-2" style="width: 20rem;">
+    <div class="card sc-2 view overlay hm-stylish-strong" style="width: 20rem;" ng-model="posts">
       <img class="card-img-top" src="..." alt="Card image cap">
+      <div class="mask">
+        <p class="share">Share</p>
+        <a href="https://www.facebook.com/sharer.php?u=https://www.facebook.com/karialbrocoaching/photos/a.260397487657143.1073741827.260395410990684/522484688115087/?type=3&theater" class="fb-a" target="_blank"><img src="./images/chat.svg" class="share-fb" /></a>
+
+        <a href="https://www.instagram.com/karialbrocoaching/" class="in-a" target="_blank"><img src="./images/instagram.svg" class="share-in" /></a>
+
+        <a href="http://twitter.com/share?text=https://twitter.com/KariAlbro/status/845897177222254592" class="tw-a" target="_blank"><img src="./images/twitter.svg" class="share-tw" /></a>
+      </div>
       <div class="card-body">
         <h4 class="card-title">Card title</h4>
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
       </div>
     </div>
 
-    <div class="card sc-3" style="width: 20rem;">
+    <div class="card sc-3 view overlay hm-stylish-strong" style="width: 20rem;" ng-model="posts">
       <img class="card-img-top" src="..." alt="Card image cap">
+      <div class="mask">
+        <p class="share">Share</p>
+        <a href="https://www.facebook.com/sharer.php?u=https://www.facebook.com/karialbrocoaching/photos/a.260397487657143.1073741827.260395410990684/522484688115087/?type=3&theater" class="fb-a" target="_blank"><img src="./images/chat.svg" class="share-fb" /></a>
+
+        <a href="https://www.instagram.com/karialbrocoaching/" class="in-a" target="_blank"><img src="./images/instagram.svg" class="share-in" /></a>
+
+        <a href="http://twitter.com/share?text=https://twitter.com/KariAlbro/status/845897177222254592" class="tw-a" target="_blank"><img src="./images/twitter.svg" class="share-tw" /></a>
+      </div>
       <div class="card-body">
         <h4 class="card-title">Card title</h4>
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
       </div>
     </div>
 
-    <!-- <div class="card box-1" style="width: 20rem;">
-  <img class="card-img-top" src="..." alt="Card image cap">
-  <div class="card-body">
-    <h4 class="card-title">Card title</h4>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-<div class="card box-2" style="width: 20rem;">
-  <img class="card-img-top" src="..." alt="Card image cap">
-  <div class="card-body">
-    <h4 class="card-title">Card title</h4>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-<div class="card box-3" style="width: 20rem;">
-  <img class="card-img-top" src="..." alt="Card image cap">
-  <div class="card-body">
-    <h4 class="card-title">Card title</h4>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div> -->
 
     <div class="spacer-box2"></div>
 
-    <div class="card sc-4" style="width: 20rem;">
+    <div class="card sc-4 view overlay hm-stylish-strong" style="width: 20rem;" ng-model="posts">
       <img class="card-img-top" src="..." alt="Card image cap">
+      <div class="mask">
+        <p class="share">Share</p>
+        <a href="https://www.facebook.com/sharer.php?u=https://www.facebook.com/karialbrocoaching/photos/a.260397487657143.1073741827.260395410990684/522484688115087/?type=3&theater" class="fb-a" target="_blank"><img src="./images/chat.svg" class="share-fb" /></a>
+
+        <a href="https://www.instagram.com/karialbrocoaching/" class="in-a" target="_blank"><img src="./images/instagram.svg" class="share-in" /></a>
+
+        <a href="http://twitter.com/share?text=https://twitter.com/KariAlbro/status/845897177222254592" class="tw-a" target="_blank"><img src="./images/twitter.svg" class="share-tw" /></a>
+      </div>
       <div class="card-body">
         <h4 class="card-title">Card title</h4>
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
       </div>
     </div>
 
-    <div class="card sc-5" style="width: 20rem;">
+    <div class="card sc-5 view overlay hm-stylish-strong" style="width: 20rem;" ng-model="posts">
       <img class="card-img-top" src="..." alt="Card image cap">
+      <div class="mask">
+        <p class="share">Share</p>
+        <a href="https://www.facebook.com/sharer.php?u=https://www.facebook.com/karialbrocoaching/photos/a.260397487657143.1073741827.260395410990684/522484688115087/?type=3&theater" class="fb-a" target="_blank"><img src="./images/chat.svg" class="share-fb" /></a>
+
+        <a href="https://www.instagram.com/karialbrocoaching/" class="in-a" target="_blank"><img src="./images/instagram.svg" class="share-in" /></a>
+
+
+      <a href="http://twitter.com/share?text=https://twitter.com/KariAlbro/status/845897177222254592" class="tw-a" target="_blank"><img src="./images/twitter.svg" class="share-tw" /></a>
+      </div>
       <div class="card-body">
         <h4 class="card-title">Card title</h4>
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
       </div>
     </div>
 
-    <div class="card sc-6" style="width: 20rem;">
+    <div class="card sc-6 view overlay hm-stylish-strong" style="width: 20rem;" ng-model="posts">
       <img class="card-img-top" src="..." alt="Card image cap">
+      <div class="mask">
+        <p class="share">Share</p>
+        <a href="https://www.facebook.com/sharer.php?u=https://www.facebook.com/karialbrocoaching/photos/a.260397487657143.1073741827.260395410990684/522484688115087/?type=3&theater" class="fb-a" target="_blank"><img src="./images/chat.svg" class="share-fb" /></a>
+
+        <a href="https://www.instagram.com/karialbrocoaching/" class="in-a" target="_blank"><img src="./images/instagram.svg" class="share-in" /></a>
+
+        <a href="http://twitter.com/share?text=https://twitter.com/KariAlbro/status/845897177222254592" class="tw-a" target="_blank"><img src="./images/twitter.svg" class="share-tw" /></a>
+      </div>
       <div class="card-body">
         <h4 class="card-title">Card title</h4>
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
       </div>
     </div>
 
-    <!-- <div class="box-4">
-      <img src="./images/Kari Squating.jpg" alt="" class="soc-exp">
-    </div>
-    <div class="box-5">
-      <img src="./images/Kari Squating.jpg" alt="" class="soc-exp">
-    </div>
-    <div class="box-6">
-      <img src="./images/Kari Squating.jpg" alt="" class="soc-exp">
-    </div> -->
-
-    <!-- <div class="card box-4" style="width: 20rem;">
-  <img class="card-img-top" src="..." alt="Card image cap">
-  <div class="card-body">
-    <h4 class="card-title">Card title</h4>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-<div class="card box-5" style="width: 20rem;">
-  <img class="card-img-top" src="..." alt="Card image cap">
-  <div class="card-body">
-    <h4 class="card-title">Card title</h4>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-<div class="card box-6" style="width: 20rem;">
-  <img class="card-img-top" src="..." alt="Card image cap">
-  <div class="card-body">
-    <h4 class="card-title">Card title</h4>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div> -->
 
   </div>
 
@@ -321,4 +294,6 @@
   });
 
   window.addEventListener('scroll', debounce(checkSlide));
+
+
 </script>
