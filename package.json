@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "aos": "^2.2.0",
     "body-parser": "^1.18.0",
     "cors": "^2.8.4",
     "express": "^4.15.4",

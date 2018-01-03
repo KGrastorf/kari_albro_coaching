@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<div class="page-body">
+  <nav class="navbar navbar-fixed-top sticky-top navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"><img src="./images/Kari Logo.svg" alt="Flower" class="flower"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="">
+          <a ui-sref="coach" class="home-links-nav bckd-img1" id="bckd-img1">Coaching</a>
+        </li>
+        <li class="nav-item active">
+          <a ui-sref="work" class="home-links-nav bckd-img5" id="bckd-img2">Work With Me</a>
+        </li>
+        <li class="nav-item active">
+          <a ui-sref="start" class="home-links-nav bckd-img3" id="bckd-img3">Start Here</a>
+        </li>
+        <li class="nav-item active">
+          <a ui-sref="test" class="home-links-nav bckd-img5" id="bckd-img5">Success Stories</a>
+        </li>
+        <li class="nav-item active">
+          <a ui-sref="blog" class="home-links-nav bckd-img4" id="bckd-img4">Blog</a>
+        </li>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="title-bar-wellness">
+    <h1 class="page-title-wellness">Thanks!</h1>
+    <p class="words-paragraph">You will be redirected to the home page in 5 seconds.</p>
+  </div>
+
+  <script type="text/javascript">
+    function Redirect() {
+      window.location = "./#/home";
+    }
+    setTimeout('Redirect()', 5000);
+
+    //Go to top of page onload
+    $(document).ready(function() {
+      $(this).scrollTop(0);
+    });
+  </script>

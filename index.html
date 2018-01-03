@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html ng-app="kariApp" ng-cloak>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.3/css/mdb.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Catamaran|Crimson+Text|Dancing+Script|Josefin+Sans|Open+Sans|Sacramento|Karma|Shrikhand" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="/images/Flower 48.ico" type="image/x-icon">
+  <title>Kari Albro Coaching</title>
+</head>
+
+<body ng-controller="mainCtrl">
+  <div class="hero w3-container w3-center w3-animate-opacity">
+
+      <!-- Landing Page with no Header -->
+    <div class="start-grid" id="hero">
+      <h1 class="kari-title">Coaching with Kari Albro</h1>
+      <h1 class="link-1"><a ui-sref="coach" class="home-links bckd-img1" id="bckd-img1">Coaching</a></h1>
+      <h1 class="link-2"><a ui-sref="work" class="home-links bckd-img5" id="bckd-img2">Work With Me</a></h1>
+      <h1 class="link-3"><a ui-sref="start" class="home-links bckd-img3" id="bckd-img3">Start Here</a></h1>
+      <h1 class="link-4"><a ui-sref="test" class="home-links bckd-img5" id="bckd-img7">Success Stories</a></h1>
+      <h1 class="link-5"><a ui-sref="blog" class="home-links bckd-img4" id="bckd-img4">Blog</a></h1>
+    </div>
+
+    <ui-view></ui-view><!-- UI Router container -->
+
+  </div>
+
+  <footer>
+    <div class="footer-spacer-top"></div>
+    <a class="footer-fb" target="_blank" href="https://www.facebook.com/karialbrocoaching/"><img class="fb" src="./images/face-icon.png" alt=""></a>
+    <a class="footer-in" target="_blank"href="https://www.instagram.com/karialbrocoaching/"><img class="in" src="./images/inst-icon.png" alt=""></a>
+    <a class="footer-tw" target="_blank"href="https://twitter.com/KariAlbro"><img class="tw" src="./images/twit-icon.png" alt=""></a>
+    <p class="footer">Coaching with Kari Albro</p>
+    <div class="footer-spacer-bottom"></div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+  <script src="app.js"></script>
+  <script src="mainCtrl.js"></script>
+  <script src="mainServ.js"></script>
+  <script type="text/javascript" src="js/jquery.js"></script>
+</body>
+
+</html>

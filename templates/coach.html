@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<div class="page-body">
+  <nav class="navbar navbar-fixed-top sticky-top navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"><img src="./images/Kari Logo.svg" alt="Flower" class="flower"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="">
+          <a ui-sref="coach" class="home-links-nav bckd-img1" id="bckd-img1">Coaching</a>
+        </li>
+        <li class="nav-item active">
+          <a ui-sref="work" class="home-links-nav bckd-img5" id="bckd-img2">Work With Me</a>
+        </li>
+        <li class="nav-item active">
+          <a ui-sref="start" class="home-links-nav bckd-img3" id="bckd-img3">Start Here</a>
+        </li>
+        <li class="nav-item active">
+          <a ui-sref="test" class="home-links-nav bckd-img5" id="bckd-img5">Success Stories</a>
+        </li>
+        <li class="nav-item active">
+          <a ui-sref="blog" class="home-links-nav bckd-img4" id="bckd-img4">Blog</a>
+        </li>
+        <li class="nav-item active">
+          <a ui-sref="about" class="home-links-nav bckd-img4" id="bckd-img4">About</a>
+        </li>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="parallax-3"></div>
+  <div class="title-bar-coach coach-grid">
+    <h1 class="page-title-coach title">Coaching</h1>
+  </div>
+  <div class="parallax-3"></div>
+  <div class="coach-grid-2">
+    <div class="coach-space-tippy-top">
+
+    </div>
+    <img src="./images/bubblesq.png" alt="" class="bubbles">
+    <div class="unstoppable-quote">
+      <h1 class="unknown-quote">"I choose to be unstoppable. I am bigger than my worries. The strengths of others inspire me daily. I focus on my goal. I trust my intuition and live a courageous life."</h1>
+      <p class="unknown-cite">-Unknown</p>
+    </div>
+  </div>
+  <div class="coach-grid-3">
+    <div class="coach-space-top"></div>
+    <div class="ur">
+      <img src="./images/lightsq2.png" alt="" class="lights">
+    </div>
+    <div class="ul">
+      <h1 class="max-quote">"We cannot become what we want by remaining what we are."</h1>
+      <p class="max-cite">-Max Depree</p>
+    </div>
+    <div class="coach-space-middle-1"></div>
+    <div class="coach-space-middle-2"></div>
+    <div class="coach-space-middle-3"></div>
+
+  </div>
+  <div class="parallax-3"></div>
+  <div class="start-5">
+    <div class="life-container">
+      <p class="cta"><a ui-sref="life">Self-Love<br /> Coaching</a></p>
+    </div>
+    <div class="coach-container">
+      <p class="cta"><a ui-sref="coaches">For<br /> Coaches</a></p>
+    </div>
+  </div>
+
+  <div class="parallax-3"></div>
+
+  <div class="coach-grid-5">
+    <div class="coach-space-bottom-1"></div>
+
+    <div class="lr">
+      <h1 class="harold-quote">"Don’t ask yourself what the world needs,
+ask yourself what makes you come alive.
+And then go and do that.
+Because what the world needs is people who have come alive."</h1>
+      <p class="harold-cite">-Harold Whitman</p>
+    </div>
+    <div class="ll">
+      <img src="./images/dewq.png" alt="" class="dew">
+    </div>
+    <div class="coach-space-bottom-2"></div>
+  </div>
+</div>
+<script type="text/javascript">
+  //Go to top of page onload
+  $(document).ready(function() {
+    $(this).scrollTop(0);
+  });
+
+  //Fade In Animation
+  TweenMax.from(".title", 2, {
+    opacity: 0,
+    scale: 0,
+    ease: Power0.easeOut
+  });
+</script>
